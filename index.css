@@ -1,0 +1,59 @@
+/* Base styles for the Indoor and Outdoor application */
+
+:root {
+  --primary: #ec9213;
+  --primary-dark: #d68311;
+  --background-light: #f8f7f6;
+  --background-dark: #221a10;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-background-light dark:bg-background-dark text-background-dark dark:text-background-light font-sans antialiased;
+  }
+}
+
+/* Fix mobile tap highlight */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom scrollbar utility */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Ensure images don't cause layout shift and have a backup background */
+img {
+  content-visibility: auto;
+}
+
+/* Hero Section SVH fallback */
+.min-h-screen-svh {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
