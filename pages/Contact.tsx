@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
                       <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-1">
                         +27 72 099 0138
                       </p>
-                      <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded">Available during store hours</span>
+                      <span className="text-xs font-medium text-background-dark dark:text-white bg-gray-100 dark:bg-white/10 px-2 py-0.5 rounded">Available during store hours</span>
                     </div>
                   </div>
                   <div className="flex items-start gap-5 group">

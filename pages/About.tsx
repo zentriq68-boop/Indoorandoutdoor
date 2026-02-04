@@ -15,7 +15,7 @@ const About: React.FC = () => {
         <div className="relative z-20 text-center text-white px-4 max-w-4xl animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm mb-6 mx-auto">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-            <span className="text-xs font-bold uppercase tracking-widest">Since 1995</span>
+            <span className="text-xs font-bold uppercase tracking-widest">A West Coast Tradition</span>
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 tracking-tight drop-shadow-xl">Our West Coast Story</h1>
           <p className="text-lg md:text-2xl font-medium text-gray-100 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
@@ -33,7 +33,7 @@ const About: React.FC = () => {
             </div>
             <div className="prose prose-lg text-gray-600 dark:text-gray-300">
               <p>
-                It all started in the summer of 1995, when 'Oom Jan' opened a small bait shack near the harbor entrance. He believed that Lambertsbay needed a place where locals could get honest advice along with their sinkers.
+                It all started when 'Oom Jan' opened a small bait shack near the harbor entrance. He believed that Lambertsbay needed a place where locals could get honest advice along with their sinkers.
               </p>
               <p>
                 Over the decades, as the town grew, so did we. We expanded from fishing tackle to camping gear, braai essentials, and eventually the household goods that turn a beach house into a home.
@@ -94,7 +94,7 @@ const About: React.FC = () => {
       <div className="py-24 px-4 md:px-10 relative overflow-hidden bg-[#221a10]">
         <div className="absolute inset-0 opacity-20">
           <svg className="h-full w-full" preserveAspectRatio="none" viewBox="0 0 100 100">
-            <path d="M0 100 C 20 0 50 0 100 100 Z" fill="#ec9213"></path>
+            <path d="M0 100 C 20 0 50 0 100 100 Z" fill="#132e5b"></path>
           </svg>
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#221a10] via-transparent to-[#221a10] z-0"></div>

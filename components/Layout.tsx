@@ -58,7 +58,7 @@ const Layout: React.FC = () => {
             </nav>
             <div className="mt-12 p-6 rounded-2xl bg-primary/10 border border-primary/20">
               <p className="text-background-dark dark:text-white font-medium mb-2">Need help?</p>
-              <a href="tel:+27720990138" className="text-primary font-bold text-xl flex items-center gap-2">
+              <a href="tel:+27720990138" className="text-white font-bold text-xl flex items-center gap-2">
                 <span className="material-symbols-outlined">call</span> +27 72 099 0138
               </a>
             </div>
@@ -80,7 +80,7 @@ const Layout: React.FC = () => {
               <span className="font-bold text-lg text-white">Indoor and Outdoor</span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed mb-4">
-              Serving the West Coast community with quality goods and friendly service since 1995.
+              Serving the West Coast community with quality goods and friendly service.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors text-white">
@@ -119,7 +119,7 @@ const Layout: React.FC = () => {
               </li>
               <li className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-primary text-lg">call</span>
-                <span>+27 72 099 0138</span>
+                <span className="text-background-dark dark:text-white">+27 72 099 0138</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-primary text-lg">schedule</span>

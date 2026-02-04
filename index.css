@@ -1,8 +1,8 @@
 /* Base styles for the Indoor and Outdoor application */
 
 :root {
-  --primary: #ec9213;
-  --primary-dark: #d68311;
+  --primary: #132e5b;
+  --primary-dark: #0d2142;
   --background-light: #f8f7f6;
   --background-dark: #221a10;
 }
