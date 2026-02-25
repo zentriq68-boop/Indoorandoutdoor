@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         <div className="relative flex min-h-[500px] h-[calc(100svh-80px)] md:h-[calc(100vh-108px)] flex-col gap-6 items-center justify-center p-4 text-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30 z-10"></div>
-            <div className="w-full h-full bg-cover bg-center md:bg-[center_25%]" style={{backgroundImage: 'url("/Hero Section.jpeg")'}}></div>
+            <div className="w-full h-full bg-cover bg-center md:bg-[center_25%]" style={{backgroundImage: 'url("/hero-section.jpeg")'}}></div>
           </div>
           <div className="relative z-20 flex flex-col items-center max-w-[800px]">
             <ScrollReveal variant="fade" delay={0.2}>
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
             </ScrollReveal>
             <ScrollReveal variant="slideRight" className="flex-1 relative">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
-                <img alt="Locally Owned, Community Driven" className="w-full h-auto object-cover aspect-[4/3]" src="/locally owned,community driven.jpeg"/>
+                <img alt="Locally Owned, Community Driven" className="w-full h-auto object-cover aspect-[4/3]" src="/locally-owned-community-driven.jpeg"/>
               </div>
               <div className="absolute -top-4 -left-4 w-full h-full rounded-2xl border-2 border-primary/30 z-0 -rotate-2"></div>
             </ScrollReveal>

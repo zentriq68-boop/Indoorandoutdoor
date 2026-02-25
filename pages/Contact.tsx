@@ -29,7 +29,7 @@ const Contact: React.FC = () => {
     <>
       <div className="relative w-full bg-[#221a10] py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-40">
-          <div className="w-full h-full bg-cover bg-center" style={{backgroundImage: 'url("/contact section.jpeg")'}}></div>
+          <div className="w-full h-full bg-cover bg-center" style={{backgroundImage: 'url("/contact-section.jpeg")'}}></div>
           <div className="absolute inset-0 bg-background-dark/60 mix-blend-multiply"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">

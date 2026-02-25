@@ -11,7 +11,7 @@ const About: React.FC = () => {
       <div className="relative w-full min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#221a10]/80 via-[#221a10]/40 to-transparent z-10"></div>
-          <img alt="Our West Coast Story" className="w-full h-full object-cover" src="/about us image.jpeg"/>
+          <img alt="Our West Coast Story" className="w-full h-full object-cover" src="/about-us-image.jpeg"/>
         </div>
         <div className="relative z-20 text-center text-white px-4 max-w-4xl">
           <ScrollReveal variant="fade" delay={0.2} className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm mb-6 mx-auto">
