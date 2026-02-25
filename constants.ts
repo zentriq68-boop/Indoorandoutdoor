@@ -137,14 +137,14 @@ export const PRODUCTS: Product[] = [
     "description": "Quality Bag Carry Cotton Road Zip for your outdoor and indoor needs."
   },
   {
-    "id": "bag-w-p-protea-cotton-r-r158",
-    "name": "Bag W P Protea Cotton R",
+    "id": "bag-w-p-protea-cotton-road-r158",
+    "name": "Bag W P Protea Cotton Road",
     "price": 158,
     "category": "Fashion",
-    "image": "/product-photos-and-products/bag-w-p-protea-cotton-r-r158.jpeg",
+    "image": "/product-photos-and-products/bag-w-p-protea-cotton-road-r158.jpeg",
     "rating": 4.5,
     "reviews": 13,
-    "description": "Quality Bag W P Protea Cotton R for your outdoor and indoor needs."
+    "description": "Quality Bag W P Protea Cotton Road for your outdoor and indoor needs."
   },
   {
     "id": "beam-trace--2-r15",
@@ -267,14 +267,14 @@ export const PRODUCTS: Product[] = [
     "description": "Quality Combination Pliers Dingqi for your outdoor and indoor needs."
   },
   {
-    "id": "cotton-road-purse-windpump-smal-r180",
-    "name": "Cotton Road Purse Windpump Smal",
+    "id": "cotton-road-purse-windpump-small-r180",
+    "name": "Cotton Road Purse Windpump Small",
     "price": 180,
     "category": "Fashion",
     "image": "/product-photos-and-products/cotton-road-purse-windpump-smal-r180.jpeg",
     "rating": 4.5,
     "reviews": 24,
-    "description": "Quality Cotton Road Purse Windpump Smal for your outdoor and indoor needs."
+    "description": "Quality Cotton Road Purse Windpump Small for your outdoor and indoor needs."
   },
   {
     "id": "dingqi-claw-hammer-700g-r120",
@@ -870,7 +870,7 @@ export const PRODUCTS: Product[] = [
     "id": "pva-feeding-bags-60x-120mm-r25",
     "name": "Pva Feeding Bags 60x 120mm",
     "price": 25,
-    "category": "Fashion",
+    "category": "Fishing",
     "image": "/product-photos-and-products/pva-feeding-bags-60x-120mm-r25.png",
     "rating": 4.5,
     "reviews": 16,
@@ -880,7 +880,7 @@ export const PRODUCTS: Product[] = [
     "id": "pva-feeding-bags-80x-120mm-r27",
     "name": "Pva Feeding Bags 80x 120mm",
     "price": 27,
-    "category": "Fashion",
+    "category": "Fishing",
     "image": "/product-photos-and-products/pva-feeding-bags-80x-120mm-r27.png",
     "rating": 4.5,
     "reviews": 23,
@@ -897,14 +897,14 @@ export const PRODUCTS: Product[] = [
     "description": "Quality Pva Mesh 5m 37mm Refill for your outdoor and indoor needs."
   },
   {
-    "id": "pvc-householg-glove-n-c-r24",
-    "name": "Pvc Householg Glove N/c",
+    "id": "pvc-household-glove-n-c-r24",
+    "name": "Pvc Household Glove N/c",
     "price": 24,
     "category": "Hardware",
     "image": "/product-photos-and-products/pvc-householg-glove-n-c-r24.png",
     "rating": 4.5,
     "reviews": 24,
-    "description": "Quality Pvc Householg Glove N/c for your outdoor and indoor needs."
+    "description": "Quality Pvc Household Glove N/c for your outdoor and indoor needs."
   },
   {
     "id": "reel-loomis-x-tide-400-r495",
@@ -1317,14 +1317,14 @@ export const PRODUCTS: Product[] = [
     "description": "Quality Water Paints Tube 12 for your outdoor and indoor needs."
   },
   {
-    "id": "windproof-campine-stove-k-203-r150",
-    "name": "Windproof Campine Stove K/203",
+    "id": "windproof-camping-stove-k-203-r150",
+    "name": "Windproof Camping Stove K/203",
     "price": 150,
     "category": "Camping",
     "image": "/product-photos-and-products/windproof-campine-stove-k-203-r150.jpeg",
     "rating": 4.5,
     "reviews": 16,
-    "description": "Quality Windproof Campine Stove K/203 for your outdoor and indoor needs."
+    "description": "Quality Windproof Camping Stove K/203 for your outdoor and indoor needs."
   },
   {
     "id": "wire-stripper-dingqi-r79",
