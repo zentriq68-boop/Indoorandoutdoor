@@ -122,8 +122,7 @@ const Layout: React.FC = () => {
                 <span className="text-background-dark dark:text-white">+27 72 099 0138</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-primary text-lg">schedule</span>
-                <span>Mon - Sat: 08:00 - 17:00<br/>Sun: 09:00 - 13:00</span>
+                <span>Mon - Fri: 08:30 - 17:30<br/>Sat: 09:00 - 15:00<br/>Sun: Closed</span>
               </li>
             </ul>
           </div>

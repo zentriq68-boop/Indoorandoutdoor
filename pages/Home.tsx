@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { CATEGORIES, PRODUCTS } from '../constants';
 import ProductCard from '../components/ProductCard';
+import ScrollReveal from '../components/ScrollReveal';
 
 const Home: React.FC = () => {
     const navigate = useNavigate();
@@ -14,27 +15,33 @@ const Home: React.FC = () => {
         <div className="relative flex min-h-[500px] h-[calc(100svh-80px)] md:h-[calc(100vh-108px)] flex-col gap-6 items-center justify-center p-4 text-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30 z-10"></div>
-            <div className="w-full h-full bg-cover bg-center md:bg-[center_25%]" style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDh8H5lHOhULtmYKTvRn1pERHaMfmWDTV0PIEytRpY8bAQI1Og_BrFeqjld1IIVJ8EXSZFbhAB7i9i8ipI5RXj814rhzmEgjo5L18FVGglfB_ufSnkgAbfbzSlpMZQMpemVB7IsjuHHvFl0H4_UmvAp2BRlMrNWwqkJzOSxKpilb4ZvTpCuPSTyMgb69yBTL8IR-M0r78qaCrnOESjNws1akdkGiyQuzT9fLK_shU9LuoZbOEM6Odp30uDr6zSiQRY2xKcTAIo4YHs")'}}></div>
+            <div className="w-full h-full bg-cover bg-center md:bg-[center_25%]" style={{backgroundImage: 'url("/Hero Section.jpeg")'}}></div>
           </div>
-          <div className="relative z-20 flex flex-col items-center max-w-[800px] animate-fade-in-up">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/20 backdrop-blur-sm px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white border border-white/30">
-              <span className="material-symbols-outlined text-sm">location_on</span>
-              Lambertsbay, West Coast
-            </div>
-            <h1 className="text-white text-3xl font-black leading-tight tracking-[-0.033em] sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-lg mb-4">
-              Everything you need for the West Coast Life
-            </h1>
-            <h2 className="text-gray-200 text-base font-medium leading-relaxed md:text-lg max-w-2xl mb-8 drop-shadow-md">
-              From quality fishing gear to the perfect braai setup. We supply locals and visitors with the essentials for coastal living.
-            </h2>
-            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <div className="relative z-20 flex flex-col items-center max-w-[800px]">
+            <ScrollReveal variant="fade" delay={0.2}>
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/20 backdrop-blur-sm px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white border border-white/30">
+                <span className="material-symbols-outlined text-sm">location_on</span>
+                Lambertsbay, West Coast
+              </div>
+            </ScrollReveal>
+            <ScrollReveal variant="slideUp" delay={0.4}>
+              <h1 className="text-white text-3xl font-black leading-tight tracking-[-0.033em] sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-lg mb-4">
+                Everything you need for the West Coast Life
+              </h1>
+            </ScrollReveal>
+            <ScrollReveal variant="slideUp" delay={0.6}>
+              <h2 className="text-gray-200 text-base font-medium leading-relaxed md:text-lg max-w-2xl mb-8 drop-shadow-md">
+                From quality fishing gear to the perfect braai setup. We supply locals and visitors with the essentials for coastal living.
+              </h2>
+            </ScrollReveal>
+            <ScrollReveal variant="fade" delay={0.8} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <button onClick={() => navigate('/catalogue')} className="flex items-center justify-center rounded-xl h-12 px-8 bg-primary hover:bg-primary/90 text-white text-base font-bold leading-normal tracking-[0.015em] transition-all transform hover:scale-105 shadow-lg shadow-primary/30">
                 Explore Our Products
               </button>
               <button onClick={() => navigate('/catalogue')} className="flex items-center justify-center rounded-xl h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border border-white/30 text-base font-bold leading-normal tracking-[0.015em] transition-all">
                 View Fan Favourites
               </button>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </div>
@@ -47,58 +54,48 @@ const Home: React.FC = () => {
             <h2 className="text-background-dark dark:text-white text-3xl md:text-4xl font-bold leading-tight">Find Your Gear</h2>
             <div className="w-20 h-1 bg-primary rounded-full mt-4"></div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <ScrollReveal variant="slideUp" staggerChildren={0.1} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {CATEGORIES.map((category) => (
-              <Link to={`/catalogue?category=${category.name}`} key={category.id} className="group relative overflow-hidden rounded-xl aspect-[3/4] shadow-md hover:shadow-xl transition-all duration-300">
-                <div 
-                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" 
-                    style={{backgroundImage: `url("${category.image}")`}}
-                ></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 w-full p-6 text-center">
-                  <div className="inline-block border-2 border-white/30 bg-white/10 backdrop-blur-md rounded-lg px-6 py-3 transform group-hover:-translate-y-2 transition-transform duration-300">
-                    <h3 className="text-white text-xl font-bold tracking-wide">{category.name}</h3>
+              <ScrollReveal variant="scale" key={category.id}>
+                <Link to={`/catalogue?category=${category.name}`} className="group relative overflow-hidden rounded-xl aspect-[3/4] shadow-md hover:shadow-xl transition-all duration-300 block">
+                  <div 
+                      className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" 
+                      style={{backgroundImage: `url("${category.image}")`}}
+                  ></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 w-full p-6 text-center">
+                    <div className="inline-block border-2 border-white/30 bg-white/10 backdrop-blur-md rounded-lg px-6 py-3 transform group-hover:-translate-y-2 transition-transform duration-300">
+                      <h3 className="text-white text-xl font-bold tracking-wide">{category.name}</h3>
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </ScrollReveal>
             ))}
-          </div>
+          </ScrollReveal>
         </div>
       </div>
 
       {/* About Section */}
-      <div className="w-full bg-[#f2efe9] dark:bg-[#2a2218] py-16 md:py-24">
+      <div className="w-full bg-[#f2efe9] dark:bg-[#2a2218] py-16 md:py-24 overflow-hidden">
         <div className="max-w-[1200px] mx-auto px-4 md:px-10">
           <div className="flex flex-col md:flex-row items-center gap-12">
-            <div className="flex-1 space-y-6">
+            <ScrollReveal variant="slideLeft" className="flex-1 space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold text-background-dark dark:text-white">Locally Owned, <br/><span className="text-primary">Community Driven</span></h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                 Indoor and Outdoor isn't just a store; it's a part of the West Coast fabric. Whether you're heading out for the kreef season, setting up camp at the dunes, or just need a new pot for Sunday lunch, we've got you covered with trusted brands and local advice.
               </p>
               <div className="flex flex-col gap-4 pt-2">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-primary">verified</span>
-                  <span className="font-bold text-background-dark dark:text-white">Expert Fishing Advice</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-primary">verified</span>
-                  <span className="font-bold text-background-dark dark:text-white">Quality Camping Gear</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-primary">verified</span>
-                  <span className="font-bold text-background-dark dark:text-white">Fresh Bait Daily</span>
-                </div>
               </div>
               <button onClick={() => navigate('/about')} className="mt-4 px-6 py-3 bg-transparent border-2 border-background-dark dark:border-white text-background-dark dark:text-white font-bold rounded-xl hover:bg-background-dark hover:text-white dark:hover:bg-white dark:hover:text-background-dark transition-colors">
                 Learn More About Us
               </button>
-            </div>
-            <div className="flex-1 relative">
+            </ScrollReveal>
+            <ScrollReveal variant="slideRight" className="flex-1 relative">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
-                <img alt="Wooden pier leading into the ocean" className="w-full h-auto object-cover aspect-[4/3]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxJL_PJYnGilaZ3rDfjLqjTPm_0THskFwqIP7SajLvBaL7LdBGcMc3DBBoEJOFB5D0ouREBIZA909JHD6_S_Yrgvlfpdz5nxxCALjJEe6ksvUgduNqr9YDyKEx_rLPfmoDIpqP27pmBNY_B9SF5OL956sY8Jhx04AV18GGoOyNSxe0Bc8R50nk8zb0mrsdNp6F3IcVnbkmCem3pPegBv7Cs-sx2Yjd8l863AcwPQVWInXvmIyKBH02yi9l3Q4AByp6JxnsUASLRbs"/>
+                <img alt="Locally Owned, Community Driven" className="w-full h-auto object-cover aspect-[4/3]" src="/locally owned,community driven.jpeg"/>
               </div>
               <div className="absolute -top-4 -left-4 w-full h-full rounded-2xl border-2 border-primary/30 z-0 -rotate-2"></div>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </div>
@@ -115,11 +112,13 @@ const Home: React.FC = () => {
               View All <span className="material-symbols-outlined text-sm">arrow_forward</span>
             </Link>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <ScrollReveal variant="slideUp" staggerChildren={0.1} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {featuredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ScrollReveal key={product.id} variant="slideUp">
+                <ProductCard product={product} />
+              </ScrollReveal>
             ))}
-          </div>
+          </ScrollReveal>
         </div>
       </div>
 
