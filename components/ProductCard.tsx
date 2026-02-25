@@ -29,6 +29,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             className="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal" 
             src={product.image} 
             alt={product.name}
+            loading="lazy"
+            decoding="async"
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           />

@@ -250,7 +250,12 @@ const Catalogue: React.FC = () => {
                         <img 
                         className="w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-normal" 
                         src={product.image} 
-                        alt={product.name} 
+                        alt={product.name}
+                        loading={PRODUCTS.indexOf(product) < 4 ? "eager" : "lazy"}
+                        decoding="async"
+                        {...(PRODUCTS.indexOf(product) < 4 ? { fetchPriority: "high" } : {})}
+                        width="400"
+                        height="400"
                         />
                     </div>
                     <div className="flex flex-col flex-1">

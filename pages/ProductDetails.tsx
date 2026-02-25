@@ -42,20 +42,20 @@ const ProductDetails: React.FC = () => {
                         </span>
                     </div>
                 )}
-              <img alt={product.name} className="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal group-hover:scale-105 transition-transform duration-500 ease-out" src={product.image}/>
+              <img alt={product.name} className="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal group-hover:scale-105 transition-transform duration-500 ease-out" src={product.image} fetchPriority="high" decoding="async" width="600" height="600"/>
               <button className="absolute bottom-4 right-4 bg-white/80 dark:bg-black/50 p-2 rounded-lg backdrop-blur-sm text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
                 <span className="material-symbols-outlined">zoom_in</span>
               </button>
             </div>
             <div className="grid grid-cols-4 gap-4 mt-4">
               <ScrollReveal variant="scale" delay={0.1} className="aspect-square rounded-lg border-2 border-primary cursor-pointer overflow-hidden bg-[#f8f7f6] dark:bg-[#2c241b] p-2">
-                <img alt="Thumbnail 1" className="w-full h-full object-contain" src={product.image}/>
+                <img alt="Thumbnail 1" className="w-full h-full object-contain" src={product.image} loading="lazy" decoding="async" width="100" height="100"/>
               </ScrollReveal>
               <ScrollReveal variant="scale" delay={0.2} className="aspect-square rounded-lg border border-[#e5e0d8] dark:border-[#3a3228] cursor-pointer hover:border-gray-400 overflow-hidden bg-[#f8f7f6] dark:bg-[#2c241b] p-2 opacity-60 hover:opacity-100 transition-all">
-                <img alt="Thumbnail 2" className="w-full h-full object-contain" src={product.image}/>
+                <img alt="Thumbnail 2" className="w-full h-full object-contain" src={product.image} loading="lazy" decoding="async" width="100" height="100"/>
               </ScrollReveal>
               <ScrollReveal variant="scale" delay={0.3} className="aspect-square rounded-lg border border-[#e5e0d8] dark:border-[#3a3228] cursor-pointer hover:border-gray-400 overflow-hidden bg-[#f8f7f6] dark:bg-[#2c241b] p-2 opacity-60 hover:opacity-100 transition-all">
-                <img alt="Thumbnail 3" className="w-full h-full object-contain" src={product.image}/>
+                <img alt="Thumbnail 3" className="w-full h-full object-contain" src={product.image} loading="lazy" decoding="async" width="100" height="100"/>
               </ScrollReveal>
             </div>
           </ScrollReveal>

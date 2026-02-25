@@ -8,10 +8,10 @@ const About: React.FC = () => {
 
   return (
     <>
-      <div className="relative w-full min-h-[500px] flex items-center justify-center overflow-hidden">
+      <div className="relative w-full min-h-[700px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#221a10]/80 via-[#221a10]/40 to-transparent z-10"></div>
-          <img alt="Our West Coast Story" className="w-full h-full object-cover" src="/about-us-image.jpeg"/>
+          <img alt="Our West Coast Story" className="w-full h-full object-cover object-bottom" src="/about-us-image.jpeg"/>
         </div>
         <div className="relative z-20 text-center text-white px-4 max-w-4xl">
           <ScrollReveal variant="fade" delay={0.2} className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm mb-6 mx-auto">
@@ -60,38 +60,89 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      <div className="py-20 bg-[#f0ebe5] dark:bg-[#2a2218]">
-        <div className="max-w-[1200px] mx-auto px-4 md:px-10">
-          <ScrollReveal variant="slideUp" className="text-center mb-16 max-w-3xl mx-auto">
-            <span className="text-primary font-bold uppercase tracking-widest text-xs mb-3 block">Why We Do It</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-background-dark dark:text-white mb-6">Built on West Coast Values</h2>
-            <p className="text-gray-600 dark:text-gray-300 text-lg">We don't just sell products; we uphold a way of life. Here is what matters most to us.</p>
-          </ScrollReveal>
-          <ScrollReveal variant="slideUp" staggerChildren={0.2} className="grid md:grid-cols-3 gap-8">
-            <ScrollReveal variant="scale" className="group bg-background-light dark:bg-[#32281e] p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 text-center border border-transparent hover:border-primary/20">
-              <div className="w-20 h-20 bg-white dark:bg-[#221a10] rounded-2xl flex items-center justify-center mx-auto mb-8 text-primary shadow-sm group-hover:scale-110 transition-transform duration-300">
-                <span className="material-symbols-outlined text-4xl">verified</span>
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-background-dark dark:text-white">Expert Advice</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">We don't just sell the gear; we use it. Our team knows exactly what's biting, which wood burns best, and where to pitch your tent.</p>
-            </ScrollReveal>
-            <ScrollReveal variant="scale" className="group bg-background-light dark:bg-[#32281e] p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 text-center border border-transparent hover:border-primary/20">
-              <div className="w-20 h-20 bg-white dark:bg-[#221a10] rounded-2xl flex items-center justify-center mx-auto mb-8 text-primary shadow-sm group-hover:scale-110 transition-transform duration-300">
-                <span className="material-symbols-outlined text-4xl">diamond</span>
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-background-dark dark:text-white">Quality Gear</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">We stock trusted brands tested against the harsh West Coast elements. If it rusts or breaks easily, it doesn't make it to our shelves.</p>
-            </ScrollReveal>
-            <ScrollReveal variant="scale" className="group bg-background-light dark:bg-[#32281e] p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 text-center border border-transparent hover:border-primary/20">
-              <div className="w-20 h-20 bg-white dark:bg-[#221a10] rounded-2xl flex items-center justify-center mx-auto mb-8 text-primary shadow-sm group-hover:scale-110 transition-transform duration-300">
-                <span className="material-symbols-outlined text-4xl">diversity_3</span>
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-background-dark dark:text-white">Community Focus</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">We are proud sponsors of local conservation and youth fishing initiatives. Lambertsbay is our home, and we take care of it.</p>
-            </ScrollReveal>
-          </ScrollReveal>
+      <section className="relative w-full overflow-hidden py-16 lg:py-24 bg-background-light dark:bg-background-dark">
+        <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none opacity-30 dark:opacity-20">
+          <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-primary rounded-full mix-blend-multiply filter blur-[120px] animate-pulse"></div>
+          <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-[#D4A373]/30 rounded-full mix-blend-multiply filter blur-[100px] opacity-70"></div>
         </div>
-      </div>
+        
+        <div className="container mx-auto px-6 relative z-10 max-w-[1200px]">
+          <div className="max-w-3xl mb-16 lg:mb-24">
+            <ScrollReveal variant="fade">
+              <span className="uppercase tracking-[0.2em] text-sm font-semibold text-primary dark:text-gray-400 mb-4 block">Our Philosophy</span>
+            </ScrollReveal>
+            <ScrollReveal variant="slideUp" delay={0.2}>
+              <h2 className="text-5xl lg:text-7xl font-bold text-background-dark dark:text-white leading-tight mb-6 tracking-tight">
+                Authentic West Coast <span className="italic text-primary">Living.</span>
+              </h2>
+            </ScrollReveal>
+            <ScrollReveal variant="slideUp" delay={0.4}>
+              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-xl leading-relaxed border-l-4 border-primary pl-6">
+                We don't just sell gear; we empower your journey. From the Lambertsbay harbor to the rugged dunes, we provide the essentials that define our coastal way of life.
+              </p>
+            </ScrollReveal>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+            <div className="lg:col-span-7 relative group">
+              <ScrollReveal variant="slideLeft">
+                <div className="absolute inset-0 bg-primary rounded-3xl transform translate-x-3 translate-y-3 transition-transform duration-300 group-hover:translate-x-4 group-hover:translate-y-4 opacity-10"></div>
+                <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                  <img alt="Quality Gear on the West Coast" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfCtiE5mXjvBh3AzUZ2qCKe3cZyoHX23jhTDaHcJbL8QFrA56aee6jAp45p3T6Y9JZXG2wMttPROjU1Fe5wbglzlwTa2b0YsI4wRcsxvn9ARzkFcHXqJNGho5uBmecce3xOfYRTTz0KcXbvWGwjMYX5qQ1LbNyDLFCNLi7y56iqq3yiOYiMJy62KvaMYCuZp0AOxx9dcYlmlSKxaf00SzvC7YuWyM6ZrOPHNfGp1IZaVred9Y2tt_D1MWrgdP0u4s2mNSZltLC_Qg"/>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 p-8 lg:p-10">
+                    <div className="flex items-center space-x-4 mb-4">
+                      <span className="bg-white/20 backdrop-blur-md p-3 rounded-full text-white">
+                        <span className="material-symbols-outlined text-2xl">diamond</span>
+                      </span>
+                      <h3 className="text-3xl font-bold text-white">Quality Gear</h3>
+                    </div>
+                    <p className="text-gray-200 text-lg leading-relaxed max-w-md">
+                      Trusted brands tested against the harsh Atlantic elements. If it doesn't last, it doesn't leave our shelves.
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            </div>
+
+            <div className="lg:col-span-5 flex flex-col space-y-8 lg:mt-12">
+              <ScrollReveal variant="slideRight" delay={0.2}>
+                <div className="bg-white/80 dark:bg-[#32281e]/80 backdrop-blur-xl border border-white/40 dark:border-white/10 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden group">
+                  <div className="absolute -right-6 -top-6 w-24 h-24 bg-primary/10 rounded-full blur-xl group-hover:bg-primary/20 transition-colors"></div>
+                  <div className="relative z-10">
+                    <div className="w-14 h-14 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 shadow-md">
+                      <span className="material-symbols-outlined text-3xl">verified</span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-background-dark dark:text-white mb-3">Expert Advice</h3>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                      We use what we sell. Our team knows exactly what's biting in the bay and which gear handles the salt air best.
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal variant="slideRight" delay={0.4}>
+                <div className="bg-primary dark:bg-[#32281e] rounded-3xl overflow-hidden shadow-lg flex flex-col sm:flex-row h-full group">
+                  <div className="sm:w-2/5 relative min-h-[200px] sm:min-h-0">
+                    <img alt="Community focus in Lambertsbay" className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKKsltCvPtl3nNQU82Isc0BUviACHZ20EZmYYIJkGLOahNPt0G3iiWahge8ToIH3uW8Gk9LrDy0tnF5fAjBA7SDxIbF_PVvoNhyNK4ge9OaK6mwGve95_HECSMzshBS2QjO3n3zKGIupVvb9A3DADpOw0QQc0g5PWBq4p1ch8ujoTSwm3f1YyqRYSLIhys7XLsFKa2-afnOy50H4JFsxy7etm5HnVpyej2I56cN2ZFJGz3GNCQr184lz_q4tRFIgrcPZnsmb1jonY"/>
+                    <div className="absolute inset-0 bg-primary/30 mix-blend-multiply"></div>
+                  </div>
+                  <div className="sm:w-3/5 p-8 flex flex-col justify-center">
+                    <div className="flex items-center mb-4 text-white/70">
+                      <span className="material-symbols-outlined mr-2 text-sm">groups</span>
+                      <span className="uppercase text-[10px] font-bold tracking-[0.2em]">Our Promise</span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-3">Community Focus</h3>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      Proudly supporting local conservation and Lambertsbay's youth. This isn't just a business; it's our community.
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Removed Our People section */}
 
