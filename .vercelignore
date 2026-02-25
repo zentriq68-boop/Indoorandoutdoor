@@ -1,0 +1,10 @@
+node_modules
+.vercel
+dist
+.env
+.env.local
+.git
+README.md
+task.md
+implementation_plan.md
+walkthrough.md
