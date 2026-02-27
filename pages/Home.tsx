@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { CATEGORIES, PRODUCTS } from '../constants';
+import { CATEGORIES, PRODUCTS, LOCAL_BUSINESS_SCHEMA } from '../constants';
 import ProductCard from '../components/ProductCard';
 import ScrollReveal from '../components/ScrollReveal';
+import SEO from '../components/SEO';
+import { Helmet } from 'react-helmet-async';
 
 const Home: React.FC = () => {
     const navigate = useNavigate();
@@ -10,6 +12,16 @@ const Home: React.FC = () => {
 
   return (
     <>
+      <SEO 
+        title="Indoor and Outdoor | Lambert's Bay General Store"
+        description="Your trusted general store in Lambert's Bay for quality fishing gear, braai equipment, and camping essentials for the ultimate West Coast lifestyle."
+        url="https://indoorandoutdoor.co.za/"
+      />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(LOCAL_BUSINESS_SCHEMA)}
+        </script>
+      </Helmet>
       {/* Hero Section */}
       <div className="w-full">
         <div className="relative flex min-h-[500px] h-[calc(100svh-80px)] md:h-[calc(100vh-108px)] flex-col gap-6 items-center justify-center p-4 text-center overflow-hidden">
@@ -26,12 +38,12 @@ const Home: React.FC = () => {
             </ScrollReveal>
             <ScrollReveal variant="slideUp" delay={0.4}>
               <h1 className="text-white text-3xl font-black leading-tight tracking-[-0.033em] sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-lg mb-4">
-                Everything you need for the West Coast Life
+                Indoor and Outdoor Lambert's Bay: Fishing Gear & Camping Equipment
               </h1>
             </ScrollReveal>
             <ScrollReveal variant="slideUp" delay={0.6}>
               <h2 className="text-gray-200 text-base font-medium leading-relaxed md:text-lg max-w-2xl mb-8 drop-shadow-md">
-                From quality fishing gear to the perfect braai setup. We supply locals and visitors with the essentials for coastal living.
+                Your trusted local general store on the West Coast for fishing tackle, braai setups, and coastal living essentials.
               </h2>
             </ScrollReveal>
             <ScrollReveal variant="fade" delay={0.8} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -51,7 +63,7 @@ const Home: React.FC = () => {
         <div className="max-w-[1200px] mx-auto">
           <div className="flex flex-col items-center mb-10 text-center">
             <span className="text-primary font-bold tracking-widest uppercase text-xs mb-2">Departments</span>
-            <h2 className="text-background-dark dark:text-white text-3xl md:text-4xl font-bold leading-tight">Find Your Gear</h2>
+            <h2 className="text-background-dark dark:text-white text-3xl md:text-4xl font-bold leading-tight">Explore Our Products: Fishing, Braai & Camping</h2>
             <div className="w-20 h-1 bg-primary rounded-full mt-4"></div>
           </div>
           <ScrollReveal variant="slideUp" staggerChildren={0.1} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

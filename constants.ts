@@ -94,7 +94,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/adrenaline-bite-alarm-large-r99.png",
     "rating": 4.5,
     "reviews": 15,
-    "description": "Quality Adrenaline Bite Alarm Large for your outdoor and indoor needs."
+    "brand": "Adrenaline",
+    "description": "Electronic bite alarm with loud alert tone and LED indicator. Great for carp and freshwater fishing sessions on the West Coast."
   },
   {
     "id": "aluminium-lunch-box-1500ml-r190",
@@ -104,7 +105,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/aluminium-lunch-box-1500ml-r190.jpeg",
     "rating": 4.5,
     "reviews": 17,
-    "description": "Quality Aluminium Lunch Box 1500ml for your outdoor and indoor needs."
+    "description": "Durable 1500ml aluminium lunch box, perfect for packing meals on camping trips or workdays. Lightweight and easy to clean."
   },
   {
     "id": "aluminium-lunch-box-800ml-r140",
@@ -114,7 +115,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/aluminium-lunch-box-800ml-r140.jpeg",
     "rating": 4.5,
     "reviews": 5,
-    "description": "Quality Aluminium Lunch Box 800ml for your outdoor and indoor needs."
+    "description": "Compact 800ml aluminium lunch box ideal for light snacks or kids' lunches. Sturdy construction with a secure lid."
   },
   {
     "id": "artist-brush-wooden-r42",
@@ -124,7 +125,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/artist-brush-wooden-r42.png",
     "rating": 4.5,
     "reviews": 16,
-    "description": "Quality Artist Brush Wooden for your outdoor and indoor needs."
+    "description": "Wooden-handle artist brush with soft bristles for oil, acrylic, and watercolour painting. Comfortable grip for detailed work."
   },
   {
     "id": "bag-carry-cotton-road-zip-r180",
@@ -134,7 +135,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/bag-carry-cotton-road-zip-r180.jpeg",
     "rating": 4.5,
     "reviews": 5,
-    "description": "Quality Bag Carry Cotton Road Zip for your outdoor and indoor needs."
+    "brand": "Cotton Road",
+    "description": "Stylish Cotton Road carry bag with secure zip closure. Spacious interior with multiple pockets for everyday essentials."
   },
   {
     "id": "bag-w-p-protea-cotton-road-r158",
@@ -144,7 +146,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/bag-w-p-protea-cotton-road-r158.jpeg",
     "rating": 4.5,
     "reviews": 13,
-    "description": "Quality Bag W P Protea Cotton Road for your outdoor and indoor needs."
+    "brand": "Cotton Road",
+    "description": "Beautiful Cotton Road waterproof bag with a proudly South African Protea print. Perfect accessory for the West Coast lifestyle."
   },
   {
     "id": "beam-trace--2-r15",
@@ -154,7 +157,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/beam-trace-2-r15.jpeg",
     "rating": 4.5,
     "reviews": 24,
-    "description": "Quality Beam Trace #2 for your outdoor and indoor needs."
+    "description": "Pre-tied beam trace rig in size #2, ready for rock and surf fishing. Strong nylon leader with quality hooks for consistent catches."
   },
   {
     "id": "bolt-cutter-350mm-dingqi-r240",
@@ -164,7 +167,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/bolt-cutter-350mm-dingqi-r240.png",
     "rating": 4.5,
     "reviews": 17,
-    "description": "Quality Bolt Cutter 350mm Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Heavy-duty 350mm bolt cutter with hardened jaws for cutting wire, bolts, and padlocks. Ergonomic non-slip handles."
   },
   {
     "id": "bolt-cutter-600mm-r400",
@@ -174,17 +178,18 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/bolt-cutter-600mm-r400.png",
     "rating": 4.5,
     "reviews": 22,
-    "description": "Quality Bolt Cutter 600mm for your outdoor and indoor needs."
+    "description": "Large 600mm bolt cutter for heavy cutting jobs. Compound leverage design makes cutting thick bolts and chains effortless."
   },
   {
     "id": "braid-loomis-8x-150m-r149",
-    "name": "Braid Loomis 8x 150m",
+    "name": "Braid Loomis 8xstrand 30LB 150m",
     "price": 149,
     "category": "Fishing",
     "image": "/product-photos-and-products/braid-loomis-8x-150m-r149.png",
     "rating": 4.5,
     "reviews": 16,
-    "description": "Quality Braid Loomis 8x 150m for your outdoor and indoor needs."
+    "brand": "Loomis",
+    "description": "Premium 8-strand braided fishing line, 30LB test in 150m spool. Ultra-smooth casting with minimal stretch for sensitive bite detection."
   },
   {
     "id": "bream-trace-float--2-r20",
@@ -194,17 +199,17 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/bream-trace-float-2-r20.jpeg",
     "rating": 4.5,
     "reviews": 21,
-    "description": "Quality Bream Trace Float #2 for your outdoor and indoor needs."
+    "description": "Pre-rigged bream trace with float and size #2 hook. Ideal for estuary and lagoon fishing along the West Coast."
   },
   {
     "id": "camping-cutlery-set-steel-r290",
-    "name": "Camping Cutlery Set Steel",
+    "name": "Camping Cutlery Set Stainless Steel",
     "price": 290,
     "category": "Camping",
     "image": "/product-photos-and-products/camping-cutlery-set-steel-r290.jpeg",
     "rating": 4.5,
     "reviews": 11,
-    "description": "Quality Camping Cutlery Set Steel for your outdoor and indoor needs."
+    "description": "Complete stainless steel camping cutlery set including knives, forks, and spoons. Comes in a handy carry pouch for easy packing."
   },
   {
     "id": "caulking-gun-dingqi-225mm-r80",
@@ -214,7 +219,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/caulking-gun-dingqi-225mm-r80.png",
     "rating": 4.5,
     "reviews": 18,
-    "description": "Quality Caulking Gun Dingqi 225mm for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "225mm caulking gun with smooth-action trigger for applying sealants and adhesives. Drip-free design keeps your workspace clean."
   },
   {
     "id": "circle-hook--2-adrenalin-r17-size-2-10-pcs",
@@ -224,7 +230,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/circle-hook-2-adrenalin-r17size-210-pcs.png",
     "rating": 4.5,
     "reviews": 22,
-    "description": "Quality Circle Hook #2 Adrenalin for your outdoor and indoor needs."
+    "brand": "Adrenaline",
+    "description": "Pack of 10 size #2 circle hooks designed for catch-and-release. The inward-pointing tip ensures a secure corner-of-mouth hookset."
   },
   {
     "id": "circle-hook--2-0-adrenalin-r19-10pcs-size-2-0",
@@ -234,7 +241,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/circle-hook-2-0-adrenalin-r1910pcssize-2-0.png",
     "rating": 4.5,
     "reviews": 14,
-    "description": "Quality Circle Hook #2/0 Adrenalin for your outdoor and indoor needs."
+    "brand": "Adrenaline",
+    "description": "10-pack of size 2/0 circle hooks by Adrenaline. Ideal for targeting medium gamefish with live or cut bait."
   },
   {
     "id": "circle-hook-size--4-0-adrenaline-r27-10pcs-size-4-0",
@@ -244,7 +252,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/circle-hook-size-4-0-adrenaline-r2710pcssize-4-0.png",
     "rating": 4.5,
     "reviews": 11,
-    "description": "Quality Circle Hook Size #4/0 Adrenaline for your outdoor and indoor needs."
+    "brand": "Adrenaline",
+    "description": "Heavy-duty 4/0 circle hooks in a 10-piece pack. Built for bigger species like kob and steenbras with strong, corrosion-resistant wire."
   },
   {
     "id": "circle-hook-size-6-0-adrenaline-r42-10pcs",
@@ -254,7 +263,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/circle-hook-size-6-0-adrenaline-r4210pcs.png",
     "rating": 4.5,
     "reviews": 10,
-    "description": "Quality Circle Hook Size 6/0 Adrenaline for your outdoor and indoor needs."
+    "brand": "Adrenaline",
+    "description": "Extra-large 6/0 circle hooks for serious rock and surf anglers. 10 per pack, designed for large bait presentations and trophy fish."
   },
   {
     "id": "combination-pliers-dingqi-r90",
@@ -264,7 +274,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/combination-pliers-dingqi-r90.png",
     "rating": 4.5,
     "reviews": 23,
-    "description": "Quality Combination Pliers Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Versatile combination pliers for gripping, bending, and cutting wire. Chrome vanadium steel with insulated comfort-grip handles."
   },
   {
     "id": "cotton-road-purse-windpump-small-r180",
@@ -274,7 +285,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/cotton-road-purse-windpump-smal-r180.jpeg",
     "rating": 4.5,
     "reviews": 24,
-    "description": "Quality Cotton Road Purse Windpump Small for your outdoor and indoor needs."
+    "brand": "Cotton Road",
+    "description": "Charming Cotton Road purse featuring a Karoo windpump design. Compact size with card slots, zip compartment, and snap closure."
   },
   {
     "id": "dingqi-claw-hammer-700g-r120",
@@ -284,7 +296,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/dingqi-claw-hammer-700g-r120.png",
     "rating": 4.5,
     "reviews": 10,
-    "description": "Quality Dingqi Claw Hammer 700g for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Solid 700g claw hammer with a forged steel head and shock-absorbing fibreglass handle. Great for general construction and DIY."
   },
   {
     "id": "dingqi-pipe-cutter-42mm-r124",
@@ -294,7 +307,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/dingqi-pipe-cutter-42mm-r124.png",
     "rating": 4.5,
     "reviews": 13,
-    "description": "Quality Dingqi Pipe Cutter 42mm for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Precision 42mm pipe cutter for copper, PVC, and aluminium tubing. Ratcheting mechanism provides clean, burr-free cuts."
   },
   {
     "id": "dingqi-sprayer-r120",
@@ -304,7 +318,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/dingqi-sprayer-r120.png",
     "rating": 4.5,
     "reviews": 16,
-    "description": "Quality Dingqi Sprayer for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Adjustable pressure sprayer for garden use, cleaning, and chemical application. 1-litre capacity with comfortable pump action."
   },
   {
     "id": "earmuf-dingqi-r65",
@@ -314,7 +329,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/earmuf-dingqi-r65.png",
     "rating": 4.5,
     "reviews": 10,
-    "description": "Quality Earmuf Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Noise-reducing ear muffs for workshop and construction site safety. Adjustable padded headband for all-day comfort. NRR rated."
   },
   {
     "id": "elf-drift-trace-hook--4-r20",
@@ -324,7 +340,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/elf-drift-trace-hook-4-r20.jpeg",
     "rating": 4.5,
     "reviews": 5,
-    "description": "Quality Elf Drift Trace Hook #4 for your outdoor and indoor needs."
+    "description": "Ready-to-use elf drift trace with size #4 hook. Designed for light tackle fishing targeting smaller reef species."
   },
   {
     "id": "elf-drift-trace-hook--6-r25",
@@ -334,17 +350,18 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/elf-drift-trace-hook-6-r25.jpeg",
     "rating": 4.5,
     "reviews": 9,
-    "description": "Quality Elf Drift Trace Hook #6 for your outdoor and indoor needs."
+    "description": "Elf drift trace rig with size #6 hook for targeting snoek and elf from rocks or boats. Pre-tied for quick rigging."
   },
   {
     "id": "epoxy-ab-dingqi-r24",
-    "name": "Epoxy Ab Dingqi",
+    "name": "Epoxy Dingqi",
     "price": 24,
     "category": "Hardware",
     "image": "/product-photos-and-products/epoxy-ab-dingqi-r24.png",
     "rating": 4.5,
     "reviews": 13,
-    "description": "Quality Epoxy Ab Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Two-component epoxy adhesive for bonding metal, wood, ceramics, and plastics. Sets in minutes with a strong, permanent hold."
   },
   {
     "id": "fishing-beads--5-r20",
@@ -354,7 +371,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/fishing-beads-5-r20.png",
     "rating": 4.5,
     "reviews": 13,
-    "description": "Quality Fishing Beads #5 for your outdoor and indoor needs."
+    "description": "Size #5 fishing beads in assorted colours for rig attraction and bead stops. Essential tackle box accessory."
   },
   {
     "id": "fishing-glo-beads-5mm-20-s-r15",
@@ -364,7 +381,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/fishing-glo-beads-5mm-20s-r15.png",
     "rating": 4.5,
     "reviews": 9,
-    "description": "Quality Fishing Glo Beads 5mm 20's for your outdoor and indoor needs."
+    "description": "Pack of 20 luminous glo beads in 5mm. Glow-in-the-dark design attracts fish during low-light conditions."
   },
   {
     "id": "folding-shovel-camping-r140",
@@ -374,7 +391,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/folding-shovel-camping-r140.jpeg",
     "rating": 4.5,
     "reviews": 21,
-    "description": "Quality Folding Shovel Camping for your outdoor and indoor needs."
+    "description": "Compact folding shovel perfect for camping, digging fire pits, and clearing campsite ground. Lightweight with a carry pouch."
   },
   {
     "id": "hand-pump-dingqi-r170",
@@ -384,7 +401,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/hand-pump-dingqi-r170.png",
     "rating": 4.5,
     "reviews": 16,
-    "description": "Quality Hand Pump Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Manual hand pump for inflating tyres, sports balls, and air mattresses. Includes multiple nozzle attachments."
   },
   {
     "id": "handbag-cotton-road-r399",
@@ -394,7 +412,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/handbag-cotton-road-r399.jpeg",
     "rating": 4.5,
     "reviews": 16,
-    "description": "Quality Handbag Cotton Road for your outdoor and indoor needs."
+    "brand": "Cotton Road",
+    "description": "Spacious Cotton Road handbag with premium faux-leather finish. Multiple compartments and adjustable shoulder strap."
   },
   {
     "id": "heat-gun-2000w-dingqi-r380",
@@ -404,7 +423,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/heat-gun-2000w-dingqi-r380.png",
     "rating": 4.5,
     "reviews": 8,
-    "description": "Quality Heat Gun 2000w Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Powerful 2000W heat gun with variable temperature settings for paint stripping, shrink wrapping, and thawing pipes."
   },
   {
     "id": "hole-saw-set-5pc-dingqi-r86",
@@ -414,7 +434,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/hole-saw-set-5pc-dingqi-r86.png",
     "rating": 4.5,
     "reviews": 5,
-    "description": "Quality Hole Saw Set 5pc Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "5-piece hole saw set for drilling clean holes in wood, plastic, and drywall. Includes arbor and pilot drill bit."
   },
   {
     "id": "hook-remover-adrenalin-r75",
@@ -424,7 +445,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/hook-remover-adrenalin-r75.png",
     "rating": 4.5,
     "reviews": 10,
-    "description": "Quality Hook Remover Adrenalin for your outdoor and indoor needs."
+    "brand": "Adrenaline",
+    "description": "Stainless steel hook remover for safe, easy hook extraction. Essential for responsible catch-and-release fishing."
   },
   {
     "id": "hook-sharpener-adrenaline-r30",
@@ -434,7 +456,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/hook-sharpener-adrenaline-r30.png",
     "rating": 4.5,
     "reviews": 23,
-    "description": "Quality Hook Sharpener Adrenaline for your outdoor and indoor needs."
+    "brand": "Adrenaline",
+    "description": "Diamond-coated hook sharpener to keep your hooks razor-sharp. Compact pocket-sized design for use on the rocks or boat."
   },
   {
     "id": "hook-spearpoint--10-0-r25",
@@ -444,7 +467,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/hook-spearpoint-10-0-r25.jpeg",
     "rating": 4.5,
     "reviews": 14,
-    "description": "Quality Hook Spearpoint #10/0 for your outdoor and indoor needs."
+    "description": "Strong spearpoint hook in size 10/0 for heavy surf and rock fishing. Forged steel with a chemically sharpened point."
   },
   {
     "id": "hook-spearpoint--11-0-r25",
@@ -454,7 +477,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/hook-spearpoint-11-0-r25.jpeg",
     "rating": 4.5,
     "reviews": 18,
-    "description": "Quality Hook Spearpoint #11/0 for your outdoor and indoor needs."
+    "description": "Spearpoint hook in size 11/0, built for large bait and heavy-duty rigs. Reliable hook-ups on big fish."
   },
   {
     "id": "hook-spearpoint--12-0-r25",
@@ -464,17 +487,17 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/hook-spearpoint-12-0-r25.jpeg",
     "rating": 4.5,
     "reviews": 9,
-    "description": "Quality Hook Spearpoint #12/0 for your outdoor and indoor needs."
+    "description": "Extra-strong 12/0 spearpoint fishing hook for big game surf fishing. Deep-sea rated with anti-corrosion finish."
   },
   {
     "id": "hooks-r5-10pc",
-    "name": "Hooks",
+    "name": "Hooks #12-3",
     "price": 5,
     "category": "Fishing",
     "image": "/product-photos-and-products/hooks-r5-10pc.jpeg",
     "rating": 4.5,
     "reviews": 5,
-    "description": "Quality Hooks for your outdoor and indoor needs."
+    "description": "10-piece assorted fishing hook pack in sizes #12 to #3. Essential starter set for freshwater and light saltwater fishing."
   },
   {
     "id": "insulated-s-driver-dingqi-r160",
@@ -484,7 +507,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/insulated-s-driver-dingqi-r160.png",
     "rating": 4.5,
     "reviews": 7,
-    "description": "Quality Insulated S/driver Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "VDE-rated insulated screwdriver for electrical work. Tested to 1000V with a slip-resistant ergonomic handle."
   },
   {
     "id": "khoki-lighter-highclass-zip-r70",
@@ -494,7 +518,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/khoki-lighter-highclass-zip-r70.png",
     "rating": 4.5,
     "reviews": 20,
-    "description": "Quality Khoki Lighter Highclass Zip for your outdoor and indoor needs."
+    "brand": "Khoki",
+    "description": "Refillable high-class zippo-style lighter with windproof flame. Durable metal body with a reliable flint ignition system."
   },
   {
     "id": "kingfisher-hook--2-0-r42",
@@ -504,7 +529,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/kingfisher-hook-2-0-r42.jpeg",
     "rating": 4.5,
     "reviews": 11,
-    "description": "Quality Kingfisher Hook #2/0 for your outdoor and indoor needs."
+    "description": "Premium Kingfisher hook in size 2/0 for rock and surf fishing. Needle-sharp point with a wide gape for secure hooksets."
   },
   {
     "id": "knife-sharpener-adrenaline-r40",
@@ -514,7 +539,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/knife-sharpener-adrenaline-r40.png",
     "rating": 4.5,
     "reviews": 21,
-    "description": "Quality Knife Sharpener Adrenaline for your outdoor and indoor needs."
+    "brand": "Adrenaline",
+    "description": "Compact knife sharpener with carbide and ceramic stages. Quickly restores a sharp edge on fillet knives and kitchen blades."
   },
   {
     "id": "land-it-hook--9-0-5pc-r21",
@@ -524,7 +550,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/land-it-hook-9-0-5pc-r21.jpeg",
     "rating": 4.5,
     "reviews": 21,
-    "description": "Quality Land/it Hook #9/0 5pc for your outdoor and indoor needs."
+    "description": "5-piece pack of Land-it hooks in size 9/0. Designed for shark and big game fishing with heavy-gauge wire construction."
   },
   {
     "id": "land-it-hooks--10-0-5pcs-r27",
@@ -534,7 +560,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/land-it-hooks-10-0-5pcs-r27.jpeg",
     "rating": 4.5,
     "reviews": 5,
-    "description": "Quality Land/it Hooks #10/0 5pcs for your outdoor and indoor needs."
+    "description": "5 heavy-duty 10/0 Land-it hooks for targeting large species. Forged from high-carbon steel for maximum strength."
   },
   {
     "id": "land-it-hooks--12-0-5pc-r29",
@@ -544,7 +570,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/land-it-hooks-12-0-5pc-r29.jpeg",
     "rating": 4.5,
     "reviews": 7,
-    "description": "Quality Land/it Hooks #12/0 5pc for your outdoor and indoor needs."
+    "description": "5-piece pack of extra-large 12/0 Land-it hooks. Built for trophy catches with reinforced eyelet and thick gauge shank."
   },
   {
     "id": "level-40cm-r120",
@@ -554,7 +580,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/level-40cm-r120.png",
     "rating": 4.5,
     "reviews": 19,
-    "description": "Quality Level 40cm for your outdoor and indoor needs."
+    "description": "40cm spirit level with magnetic base and 3 vials. Accurate horizontal, vertical, and 45-degree readings for tiling and brickwork."
   },
   {
     "id": "level-60cm-r130",
@@ -564,7 +590,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/level-60cm-r130.png",
     "rating": 4.5,
     "reviews": 20,
-    "description": "Quality Level 60cm for your outdoor and indoor needs."
+    "description": "60cm spirit level for medium-scale building and renovations. Shockproof vials with high-visibility markings."
   },
   {
     "id": "level-80cm-r150",
@@ -574,27 +600,29 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/level-80cm-r150.png",
     "rating": 4.5,
     "reviews": 14,
-    "description": "Quality Level 80cm for your outdoor and indoor needs."
+    "description": "Professional-grade 80cm spirit level for larger construction projects. Lightweight aluminium frame with precision-milled surfaces."
   },
   {
     "id": "lk-s-304-stainless-steel-grid-r756",
-    "name": "Lk's 304 Stainless Steel Grid",
+    "name": "Lk's 304 Stainless Steel Grid (435mmx340mm)",
     "price": 756,
     "category": "Braai",
     "image": "/product-photos-and-products/lks-304-stainless-steel-grid-r756.jpeg",
     "rating": 4.5,
     "reviews": 16,
-    "description": "Quality Lk's 304 Stainless Steel Grid for your outdoor and indoor needs."
+    "brand": "LK's",
+    "description": "Premium 304 stainless steel braai grid (435mm×340mm). Rust-resistant and built for decades of weekend braais and snoek smoking."
   },
   {
     "id": "lk-s-snoek-braai-grid-r323",
-    "name": "Lk's Snoek Braai Grid",
+    "name": "Lk's Snoek Braai Grid (620mmx330mm)",
     "price": 323,
     "category": "Braai",
     "image": "/product-photos-and-products/lks-snoek-braai-grid-r323.jpeg",
     "rating": 4.5,
     "reviews": 22,
-    "description": "Quality Lk's Snoek Braai Grid for your outdoor and indoor needs."
+    "brand": "LK's",
+    "description": "Iconic LK's snoek braai grid (620mm×330mm). The West Coast classic for braaing whole snoek over open coals. Chrome-plated steel."
   },
   {
     "id": "long-nose-pliers-dingqi-r76",
@@ -604,7 +632,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/long-nose-pliers-dingqi-r76.png",
     "rating": 4.5,
     "reviews": 15,
-    "description": "Quality Long Nose Pliers Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Precision long nose pliers for fine gripping, bending wire, and reaching tight spaces. Built from chrome vanadium steel."
   },
   {
     "id": "luminous-glowbead-10x17mm-r15",
@@ -614,7 +643,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/luminous-glowbead-10x17mm-r15.png",
     "rating": 4.5,
     "reviews": 13,
-    "description": "Quality Luminous Glowbead 10x17mm for your outdoor and indoor needs."
+    "description": "Luminous glow beads (10×17mm) that charge in sunlight and glow underwater. Attracts fish during dawn, dusk, and night sessions."
   },
   {
     "id": "luminous-glowbead-6x10mm-r10-green",
@@ -624,7 +653,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/luminous-glowbead-6x10mm-r10-green.png",
     "rating": 4.5,
     "reviews": 19,
-    "description": "Quality Luminous Glowbead 6x10mm for your outdoor and indoor needs."
+    "description": "Small 6×10mm green luminous glow beads for adding visibility to rigs and traces in murky or deep water conditions."
   },
   {
     "id": "luminous-glowbead-6x10mm-r10",
@@ -634,7 +663,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/luminous-glowbead-6x10mm-r10.png",
     "rating": 4.5,
     "reviews": 15,
-    "description": "Quality Luminous Glowbead 6x10mm for your outdoor and indoor needs."
+    "description": "Classic 6×10mm luminous glow beads for saltwater rigs. Absorb light and glow for hours to attract curious fish."
   },
   {
     "id": "mackerel-trace-r65-you-get-2",
@@ -644,17 +673,18 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/mackerel-trace-r65you-get-2.png",
     "rating": 4.5,
     "reviews": 24,
-    "description": "Quality Mackerel Trace for your outdoor and indoor needs."
+    "description": "Pre-tied mackerel trace with dual hooks and flasher beads. 2 rigs per pack, ready for jigging or trolling."
   },
   {
     "id": "multimeter-dingqi-digital-r90",
-    "name": "Multimeter Dingqi Digital",
+    "name": "Dingqi Contact Voltage Tester",
     "price": 90,
     "category": "Hardware",
     "image": "/product-photos-and-products/multimeter-dingqi-digital-r90.png",
     "rating": 4.5,
     "reviews": 17,
-    "description": "Quality Multimeter Dingqi Digital for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Non-contact voltage tester for safely detecting live wires. Auto-sensing with LED and buzzer alert indicators."
   },
   {
     "id": "mustad-fishing-hooks--2-0-r38",
@@ -664,7 +694,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/mustad-fishing-hooks-2-0-r38.jpeg",
     "rating": 4.5,
     "reviews": 20,
-    "description": "Quality Mustad Fishing Hooks #2/0 for your outdoor and indoor needs."
+    "brand": "Mustad",
+    "description": "Premium Mustad fishing hooks in size 2/0, trusted by anglers worldwide. Chemically sharpened with superior corrosion resistance."
   },
   {
     "id": "mustad-fishing-hooks--5-0-r60",
@@ -674,7 +705,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/mustad-fishing-hooks-5-0-r60.jpeg",
     "rating": 4.5,
     "reviews": 7,
-    "description": "Quality Mustad Fishing Hooks #5/0 for your outdoor and indoor needs."
+    "brand": "Mustad",
+    "description": "Mustad 5/0 hooks for heavy surf and boat fishing. Ultra-sharp Nor-Tempering point penetrates instantly on the strike."
   },
   {
     "id": "offshore-squid-10cm-glow-r50",
@@ -684,7 +716,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/offshore-squid-10cm-glow-r50.png",
     "rating": 4.5,
     "reviews": 20,
-    "description": "Quality Offshore Squid 10cm Glow for your outdoor and indoor needs."
+    "description": "10cm glow-in-the-dark squid jig for offshore fishing. UV-reactive finish that attracts chokka and squid in deep water."
   },
   {
     "id": "offshore-squid-12cm-glow-r60-green",
@@ -694,7 +726,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/offshore-squid-12cm-glow-r60-green.png",
     "rating": 4.5,
     "reviews": 15,
-    "description": "Quality Offshore Squid 12cm Glow for your outdoor and indoor needs."
+    "description": "12cm green glow squid jig for deepwater jigging. Luminous body charges quickly and glows brightly to attract squid."
   },
   {
     "id": "offshore-squid-12cm-glow-r60-red",
@@ -704,7 +736,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/offshore-squid-12cm-glow-r60-red.png",
     "rating": 4.5,
     "reviews": 23,
-    "description": "Quality Offshore Squid 12cm Glow for your outdoor and indoor needs."
+    "description": "12cm red glow offshore squid jig. The red colour works well in deeper water where red wavelengths are absorbed first."
   },
   {
     "id": "offshore-squid-12cm-glow-r60",
@@ -714,7 +746,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/offshore-squid-12cm-glow-r60.png",
     "rating": 4.5,
     "reviews": 11,
-    "description": "Quality Offshore Squid 12cm Glow for your outdoor and indoor needs."
+    "description": "Standard 12cm glow squid jig for targeting chokka and reef squid. Double-tier stainless steel barb crown for reliable hooksets."
   },
   {
     "id": "offshore-squid-15cm-pink-r70",
@@ -724,7 +756,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/offshore-squid-15cm-pink-r70.png",
     "rating": 4.5,
     "reviews": 12,
-    "description": "Quality Offshore Squid 15cm Pink for your outdoor and indoor needs."
+    "description": "Large 15cm pink squid jig for offshore jigging. Bright pink colour imitates injured baitfish and triggers aggressive strikes."
   },
   {
     "id": "oil-paint-12colors-r60",
@@ -734,7 +766,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/oil-paint-12colors-r60.png",
     "rating": 4.5,
     "reviews": 13,
-    "description": "Quality Oil Paint 12colors for your outdoor and indoor needs."
+    "description": "12-colour oil paint set with vibrant, blendable pigments. Suitable for canvas, paper, and board. Great for beginners and hobbyists."
   },
   {
     "id": "owsom-4pc-pot-set-small-r199",
@@ -744,7 +776,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/owsom-4pc-pot-set-small-r199.jpeg",
     "rating": 4.5,
     "reviews": 13,
-    "description": "Quality Owsom 4pc Pot Set Small for your outdoor and indoor needs."
+    "brand": "Owsom",
+    "description": "Compact 4-piece nesting pot set ideal for camping, hiking, and picnics. Lightweight aluminium with non-stick coating."
   },
   {
     "id": "owsom-outdoor-four-piece-pot-set-r156",
@@ -754,7 +787,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/owsom-outdoor-four-piece-pot-set-r156.jpeg",
     "rating": 4.5,
     "reviews": 8,
-    "description": "Quality Owsom Outdoor Four/piece Pot Set for your outdoor and indoor needs."
+    "brand": "Owsom",
+    "description": "4-piece outdoor pot set with foldable handles for easy packing. Hard-anodised aluminium construction stands up to campfire cooking."
   },
   {
     "id": "packable-cotton-road-hat-r90",
@@ -764,7 +798,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/packable-cotton-road-hat-r90.jpeg",
     "rating": 4.5,
     "reviews": 14,
-    "description": "Quality Packable Cotton Road Hat for your outdoor and indoor needs."
+    "brand": "Cotton Road",
+    "description": "Lightweight packable hat with UPF sun protection. Folds flat for travel and springs back into shape. Perfect for beach days."
   },
   {
     "id": "paint-by-number-30x30cm-giraffe-r88",
@@ -774,7 +809,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/paint-by-number-30x30cm-giraffe-r88.png",
     "rating": 4.5,
     "reviews": 19,
-    "description": "Quality Paint By Number 30x30cm Giraffe for your outdoor and indoor needs."
+    "description": "Paint-by-number kit featuring a giraffe design on a 30×30cm canvas. Includes numbered paints and brushes — relaxing creative fun."
   },
   {
     "id": "paint-by-number-40x50cm-leopard-r138",
@@ -784,7 +819,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/paint-by-number-40x50cm-leopard-r138.png",
     "rating": 4.5,
     "reviews": 16,
-    "description": "Quality Paint By Number 40x50cm Leopard for your outdoor and indoor needs."
+    "description": "Larger 40×50cm paint-by-number canvas with a striking leopard portrait. Premium acrylic paints included for vivid colour results."
   },
   {
     "id": "paint-by-numer-40x40cm-cat-r112",
@@ -794,7 +829,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/paint-by-numer-40x40cm-cat-r112.png",
     "rating": 4.5,
     "reviews": 10,
-    "description": "Quality Paint By Numer 40x40cm Cat for your outdoor and indoor needs."
+    "description": "Adorable cat-themed paint-by-number kit on 40×40cm canvas. A great gift for art lovers and a relaxing weekend activity."
   },
   {
     "id": "palette-set-6pc-r25",
@@ -804,7 +839,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/palette-set-6pc-r25.png",
     "rating": 4.5,
     "reviews": 19,
-    "description": "Quality Palette Set 6pc for your outdoor and indoor needs."
+    "description": "6-piece plastic palette set for mixing and blending paint colours. Easy to clean with smooth, non-porous surfaces."
   },
   {
     "id": "pipe-wrench-10--dingqi-r140",
@@ -814,7 +849,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/pipe-wrench-10-dingqi-r140.png",
     "rating": 4.5,
     "reviews": 13,
-    "description": "Quality Pipe Wrench 10' Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Heavy-duty 10-inch pipe wrench with adjustable jaw. Drop-forged steel construction for maximum torque on plumbing fittings."
   },
   {
     "id": "pipe-wrench-200mm-r99",
@@ -824,7 +860,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/pipe-wrench-200mm-r99.png",
     "rating": 4.5,
     "reviews": 8,
-    "description": "Quality Pipe Wrench 200mm for your outdoor and indoor needs."
+    "description": "Compact 200mm pipe wrench for light plumbing and maintenance tasks. Self-tightening jaw grips pipes securely."
   },
   {
     "id": "plier-pipe-dingqi-r110",
@@ -834,7 +870,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/plier-pipe-dingqi-r110.png",
     "rating": 4.5,
     "reviews": 11,
-    "description": "Quality Plier Pipe Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Multi-grip pipe pliers with adjustable slip-joint for different pipe sizes. Chrome vanadium steel with anti-slip handles."
   },
   {
     "id": "poprivet-dingqi-large-r170",
@@ -844,17 +881,19 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/poprivet-dingqi-large-r170.png",
     "rating": 4.5,
     "reviews": 7,
-    "description": "Quality Poprivet Dingqi Large for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Large pop rivet gun for joining sheet metal, leather, and plastic. Comfortable spring-loaded handle reduces hand fatigue."
   },
   {
     "id": "poprivet-dingqi-small",
     "name": "Poprivet Dingqi Small",
-    "price": 0,
+    "price": 100,
     "category": "Hardware",
     "image": "/product-photos-and-products/poprivet-dingqi-small.png",
     "rating": 4.5,
     "reviews": 7,
-    "description": "Quality Poprivet Dingqi Small for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Compact pop rivet tool for light-duty fastening jobs. Works with standard 2.4mm to 4.8mm rivets."
   },
   {
     "id": "portable-lamp-r140",
@@ -864,7 +903,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/portable-lamp-r140.jpeg",
     "rating": 4.5,
     "reviews": 16,
-    "description": "Quality Portable Lamp for your outdoor and indoor needs."
+    "description": "Battery-powered portable lamp for camping, power outages, and night fishing. Bright LED light with long battery life."
   },
   {
     "id": "pva-feeding-bags-60x-120mm-r25",
@@ -874,7 +913,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/pva-feeding-bags-60x-120mm-r25.png",
     "rating": 4.5,
     "reviews": 16,
-    "description": "Quality Pva Feeding Bags 60x 120mm for your outdoor and indoor needs."
+    "description": "PVA feeding bags (60×120mm) that dissolve in water, releasing groundbait directly at your hook. Essential for carp fishing."
   },
   {
     "id": "pva-feeding-bags-80x-120mm-r27",
@@ -884,7 +923,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/pva-feeding-bags-80x-120mm-r27.png",
     "rating": 4.5,
     "reviews": 23,
-    "description": "Quality Pva Feeding Bags 80x 120mm for your outdoor and indoor needs."
+    "description": "Larger 80×120mm PVA bags for bigger bait parcels. Water-soluble material breaks down cleanly leaving no trace in the water."
   },
   {
     "id": "pva-mesh-5m-37mm-refill-r99",
@@ -894,7 +933,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/pva-mesh-5m-37mm-refill-r99.png",
     "rating": 4.5,
     "reviews": 5,
-    "description": "Quality Pva Mesh 5m 37mm Refill for your outdoor and indoor needs."
+    "description": "5-metre PVA mesh refill in 37mm width. Fill with groundbait or pellets to create compact sticks that dissolve on the lakebed."
   },
   {
     "id": "pvc-household-glove-n-c-r24",
@@ -904,7 +943,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/pvc-householg-glove-n-c-r24.png",
     "rating": 4.5,
     "reviews": 24,
-    "description": "Quality Pvc Household Glove N/c for your outdoor and indoor needs."
+    "description": "Reusable PVC household gloves for cleaning, dishwashing, and gardening. Textured grip with waterproof protection."
   },
   {
     "id": "reel-loomis-x-tide-400-r495",
@@ -914,7 +953,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/reel-loomis-x-tide-400-r495.png",
     "rating": 4.5,
     "reviews": 22,
-    "description": "Quality Reel Loomis X Tide 400 for your outdoor and indoor needs."
+    "brand": "Loomis",
+    "description": "Loomis X Tide 400 spinning reel with 4 ball bearings and smooth drag. Perfect for rock and surf casting on the West Coast."
   },
   {
     "id": "safety-gloves-dingqi-r24",
@@ -924,7 +964,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/safety-gloves-dingqi-r24.png",
     "rating": 4.5,
     "reviews": 8,
-    "description": "Quality Safety Gloves Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "General-purpose safety gloves with latex-coated palms for improved grip. Breathable back keeps hands cool during extended use."
   },
   {
     "id": "safety-goggles-dingqi-r55",
@@ -934,7 +975,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/safety-goggles-dingqi-r55.png",
     "rating": 4.5,
     "reviews": 20,
-    "description": "Quality Safety Goggles Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Clear-lens safety goggles with anti-fog ventilation. Protects against dust, debris, and splashes during grinding and drilling."
   },
   {
     "id": "safety-goggles-r55-dingqi",
@@ -944,7 +986,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/safety-goggles-r55-dingqi.png",
     "rating": 4.5,
     "reviews": 7,
-    "description": "Quality Safety Goggles for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Wraparound safety goggles with impact-resistant polycarbonate lenses. Comfortable fit over most prescription glasses."
   },
   {
     "id": "scraper-150mm-r40",
@@ -954,17 +997,18 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/scraper-150mm-r40.png",
     "rating": 4.5,
     "reviews": 15,
-    "description": "Quality Scraper 150mm for your outdoor and indoor needs."
+    "description": "Wide 150mm scraper for removing paint, wallpaper, and adhesive residue. Stiff carbon steel blade with a comfortable handle."
   },
   {
     "id": "screwdriver-11pc-dingqi",
     "name": "Screwdriver 11pc Dingqi",
-    "price": 0,
+    "price": 60,
     "category": "Hardware",
     "image": "/product-photos-and-products/screwdriver-11pc-dingqi.png",
     "rating": 4.5,
     "reviews": 8,
-    "description": "Quality Screwdriver 11pc Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Comprehensive 11-piece screwdriver set with Phillips and flathead tips in various sizes. Chrome vanadium shafts with magnetic tips."
   },
   {
     "id": "screwdriver-set-dingqi-7p-r44",
@@ -974,7 +1018,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/screwdriver-set-dingqi-7p-r44.png",
     "rating": 4.5,
     "reviews": 14,
-    "description": "Quality Screwdriver Set Dingqi 7p for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "7-piece screwdriver set covering everyday Phillips and slotted needs. Hardened tips resist cam-out and stripping."
   },
   {
     "id": "shad-trace-double-red-r25",
@@ -984,7 +1029,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/shad-trace-double-red-r25.jpeg",
     "rating": 4.5,
     "reviews": 19,
-    "description": "Quality Shad Trace Double Red for your outdoor and indoor needs."
+    "description": "Double-hook shad trace rig in red finish for targeting shad, elf, and smaller gamefish. Ready-tied for quick deployment."
   },
   {
     "id": "shifting-dingqi-200mm-r100",
@@ -994,7 +1039,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/shifting-dingqi-200mm-r100.png",
     "rating": 4.5,
     "reviews": 16,
-    "description": "Quality Shifting Dingqi 200mm for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "200mm adjustable shifting spanner for nuts, bolts, and plumbing fittings. Precision-machined jaw for a snug, no-slip fit."
   },
   {
     "id": "shifting-dingqi-250mm-r140",
@@ -1004,7 +1050,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/shifting-dingqi-250mm-r140.png",
     "rating": 4.5,
     "reviews": 12,
-    "description": "Quality Shifting Dingqi 250mm for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Larger 250mm adjustable spanner for bigger fasteners and plumbing work. Chrome-plated finish resists rust and corrosion."
   },
   {
     "id": "side-cutter-dingqi-180mm-r100",
@@ -1014,7 +1061,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/side-cutter-dingqi-180mm-r100.png",
     "rating": 4.5,
     "reviews": 13,
-    "description": "Quality Side Cutter Dingqi 180mm for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "180mm diagonal side cutters for cleanly snipping wire, cable ties, and small nails. Hardened cutting edges for long life."
   },
   {
     "id": "soldering-iron-40w-dingqi-r134",
@@ -1024,7 +1072,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/soldering-iron-40w-dingqi-r134.png",
     "rating": 4.5,
     "reviews": 9,
-    "description": "Quality Soldering Iron 40w Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "40W soldering iron with fine tip for electronics repair, jewellery work, and hobby projects. Heats up quickly with insulated handle."
   },
   {
     "id": "south-africa-cotton-road-hat-denim-r96",
@@ -1034,7 +1083,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/south-africa-cotton-road-hat-denim-r96.jpeg",
     "rating": 4.5,
     "reviews": 7,
-    "description": "Quality South Africa Cotton Road Hat Denim for your outdoor and indoor needs."
+    "brand": "Cotton Road",
+    "description": "Proudly South African denim hat by Cotton Road. Embroidered SA flag detail with adjustable fit. Stylish sun protection."
   },
   {
     "id": "spinner-dbl-30g-s-b-adrenalin-r45",
@@ -1044,7 +1094,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/spinner-dbl-30g-s-b-adrenalin-r45.png",
     "rating": 4.5,
     "reviews": 14,
-    "description": "Quality Spinner Dbl 30g S B Adrenalin for your outdoor and indoor needs."
+    "brand": "Adrenaline",
+    "description": "30g double-bladed spinner in silver/blue finish. Creates flash and vibration that triggers predatory strikes from snoek and yellowtail."
   },
   {
     "id": "spinner-dbl-30g-sil-adrenalin-r45",
@@ -1054,7 +1105,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/spinner-dbl-30g-sil-adrenalin-r45.png",
     "rating": 4.5,
     "reviews": 23,
-    "description": "Quality Spinner Dbl 30g Sil Adrenalin for your outdoor and indoor needs."
+    "brand": "Adrenaline",
+    "description": "30g silver spinner lure with double blade for maximum flash. Effective for spinning from rocks, piers, and boats."
   },
   {
     "id": "split-ring-scissors-r39",
@@ -1064,7 +1116,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/split-ring-scissors-r39.png",
     "rating": 4.5,
     "reviews": 15,
-    "description": "Quality Split Ring Scissors for your outdoor and indoor needs."
+    "description": "Specialised scissors for opening and attaching split rings to lures and swivels. Spring-loaded with fine pointed tips."
   },
   {
     "id": "swivel-3way-linx--2-r40-size-2-qty-10",
@@ -1074,17 +1126,19 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-3way-linx-2-r40size-2qty=10.png",
     "rating": 4.5,
     "reviews": 14,
-    "description": "Quality Swivel 3way Linx #2 for your outdoor and indoor needs."
+    "brand": "Linx",
+    "description": "Size #2 three-way swivels for bottom rigs and dropper loops. 10 per pack with smooth rotation to prevent line twist."
   },
   {
     "id": "swivel-3way-linx--2-size-2-qty-10",
-    "name": "Swivel 3way Linx #2 Size 2 Qty=10",
-    "price": 0,
+    "name": "Swivel 3way Linx #2 Qty=10",
+    "price": 40,
     "category": "Fishing",
     "image": "/product-photos-and-products/swivel-3way-linx-2-size-2-qty=10.png",
     "rating": 4.5,
     "reviews": 6,
-    "description": "Quality Swivel 3way Linx #2 Size 2 Qty=10 for your outdoor and indoor needs."
+    "brand": "Linx",
+    "description": "10-pack of size #2 three-way Linx swivels. Enables multiple hook rigs and sinker attachment without line tangling."
   },
   {
     "id": "swivel-3way-linx--6-r25-r25",
@@ -1094,7 +1148,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-3way-linx-6-r25-r25.png",
     "rating": 4.5,
     "reviews": 10,
-    "description": "Quality Swivel 3way Linx #6 for your outdoor and indoor needs."
+    "brand": "Linx",
+    "description": "Smaller size #6 three-way swivels for lighter rigs. Smooth nickel-plated brass body with reliable barrel rotation."
   },
   {
     "id": "swivel-barrel--1-46kg-r25-size-1-10pcs",
@@ -1104,7 +1159,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-barrel-1-46kg-r25-size-110pcs.png",
     "rating": 4.5,
     "reviews": 21,
-    "description": "Quality Swivel Barrel #1 46kg for your outdoor and indoor needs."
+    "description": "Size #1 barrel swivels rated to 46kg. 10 per pack for building strong surf and rock fishing rigs."
   },
   {
     "id": "swivel-barrel--1-0-53kg-r28-10pcs",
@@ -1114,7 +1169,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-barrel-1-0-53kgr2810pcs.png",
     "rating": 4.5,
     "reviews": 24,
-    "description": "Quality Swivel Barrel #1/0 53kg for your outdoor and indoor needs."
+    "description": "Heavy-duty 1/0 barrel swivels rated to 53kg breaking strain. 10-pack for rigging up for big gamefish."
   },
   {
     "id": "swivel-barrel--2-46kg-r25-size-2-10-pcs",
@@ -1124,7 +1179,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-barrel-2-46kgr25.size-210-pcs.png",
     "rating": 4.5,
     "reviews": 12,
-    "description": "Quality Swivel Barrel #2 46kg for your outdoor and indoor needs."
+    "description": "Size #2 barrel swivels with 46kg capacity. 10-piece pack for everyday rock and surf rig building."
   },
   {
     "id": "swivel-barrel--2-0-r38-55kg-10-pcs",
@@ -1134,7 +1189,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-barrel-2-0-r3855kg10-pcs.png",
     "rating": 4.5,
     "reviews": 12,
-    "description": "Quality Swivel Barrel #2/0 for your outdoor and indoor needs."
+    "description": "Size 2/0 barrel swivels rated to 55kg. 10 per pack for constructing heavy-duty bottom and surf rigs."
   },
   {
     "id": "swivel-barrel--4-30kg-r20-size-4-10pcs",
@@ -1144,7 +1199,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-barrel-4-30kg-r20-size-410pcs.png",
     "rating": 4.5,
     "reviews": 18,
-    "description": "Quality Swivel Barrel #4 30kg for your outdoor and indoor needs."
+    "description": "Size #4 barrel swivels rated to 30kg. 10-pack ideal for lighter surf setups and bream rigs."
   },
   {
     "id": "swivel-barrel--6-27kg-r18-part-2",
@@ -1154,7 +1209,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-barrel-6-27kg-r18-part-2.png",
     "rating": 4.5,
     "reviews": 14,
-    "description": "Quality Swivel Barrel #6 27kg for your outdoor and indoor needs."
+    "description": "Size #6 barrel swivels with 27kg capacity. 10-piece pack suitable for medium-weight traces and bottom rigs."
   },
   {
     "id": "swivel-barrel--6-27kg-r18",
@@ -1164,7 +1219,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-barrel-6-27kg-r18.png",
     "rating": 4.5,
     "reviews": 15,
-    "description": "Quality Swivel Barrel #6 27kg for your outdoor and indoor needs."
+    "description": "Versatile #6 barrel swivels rated to 27kg. Reliable connection point for traces, sinkers, and hook lengths."
   },
   {
     "id": "swivel-barrel-linx--8-r20-size-6-qty-10",
@@ -1174,7 +1229,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-barrel-linx-8-r20size-6qty=10.png",
     "rating": 4.5,
     "reviews": 11,
-    "description": "Quality Swivel Barrel Linx #8 for your outdoor and indoor needs."
+    "brand": "Linx",
+    "description": "Size #8 Linx barrel swivels. 10-pack of compact, low-profile swivels for finesse and light tackle fishing applications."
   },
   {
     "id": "swivel-barrel-linx--8-r20-size-8-qty-10",
@@ -1184,7 +1240,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-barrel-linx-8-r20size-8qty=10.png",
     "rating": 4.5,
     "reviews": 17,
-    "description": "Quality Swivel Barrel Linx #8 for your outdoor and indoor needs."
+    "brand": "Linx",
+    "description": "10-pack of premium #8 Linx barrel swivels with ultra-smooth rotation. Prevents line twist for cleaner casts and retrieves."
   },
   {
     "id": "swivel-barrel-lx--1-r35-size-1-qty-10",
@@ -1194,7 +1251,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-barrel-lx-1-r35size-1qty=10.png",
     "rating": 4.5,
     "reviews": 22,
-    "description": "Quality Swivel Barrel Lx #1 for your outdoor and indoor needs."
+    "brand": "Linx",
+    "description": "Heavy-duty #1 Linx barrel swivels, 10 per pack. Built for strong surf and boat rigs with reliable knot points."
   },
   {
     "id": "swivel-barrel-lx--4-r20",
@@ -1204,7 +1262,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-barrel-lx-4-r20.png",
     "rating": 4.5,
     "reviews": 24,
-    "description": "Quality Swivel Barrel Lx #4 for your outdoor and indoor needs."
+    "brand": "Linx",
+    "description": "Compact #4 Linx barrel swivels for lighter rigs. Clean barrel design ensures tangle-free rotation during retrieval."
   },
   {
     "id": "swivel-snap--2-r30-size-2-25kg-10-pcs",
@@ -1214,7 +1273,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-snap-2-r30-size-225kg10-pcs.png",
     "rating": 4.5,
     "reviews": 8,
-    "description": "Quality Swivel Snap #2 for your outdoor and indoor needs."
+    "description": "Size #2 snap swivels rated to 25kg. 10 per pack with quick-change snap for fast lure and sinker swaps."
   },
   {
     "id": "swivel-snap--4-r25-size-4-25kg-10pcs",
@@ -1224,7 +1283,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-snap-4-r25-size-425kg10pcs.png",
     "rating": 4.5,
     "reviews": 7,
-    "description": "Quality Swivel Snap #4 for your outdoor and indoor needs."
+    "description": "Size #4 snap swivels with 25kg breaking strain. Easy clip-on design for fast leader and trace changes."
   },
   {
     "id": "swivel-snap--6-r20-size-6-18kg-10pcs",
@@ -1234,7 +1293,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/swivel-snap-6-r20-size-618kg10pcs.png",
     "rating": 4.5,
     "reviews": 9,
-    "description": "Quality Swivel Snap #6 for your outdoor and indoor needs."
+    "description": "Small #6 snap swivels rated to 18kg. 10-pack for light tackle, bait, and lure fishing setups."
   },
   {
     "id": "tesco-fine-paint-brush-6--r50",
@@ -1244,7 +1303,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/tesco-fine-paint-brush6-r50.png",
     "rating": 4.5,
     "reviews": 19,
-    "description": "Quality Tesco Fine Paint Brush(6) for your outdoor and indoor needs."
+    "brand": "Tesco",
+    "description": "Set of 6 fine-tipped paint brushes for detail work, model painting, and crafts. Soft synthetic bristles with tapered handles."
   },
   {
     "id": "tin-snip-dingqi-250mm-r130-s",
@@ -1254,7 +1314,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/tin-snip-dingqi-250mm-r130-s.png",
     "rating": 4.5,
     "reviews": 19,
-    "description": "Quality Tin Snip Dingqi 250mm for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "250mm tin snips for cutting sheet metal, flashing, and ductwork. Straight-cut design with compound leverage action."
   },
   {
     "id": "tin-snip-dingqi-250mm-r130",
@@ -1264,7 +1325,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/tin-snip-dingqi-250mm-r130.png",
     "rating": 4.5,
     "reviews": 7,
-    "description": "Quality Tin Snip Dingqi 250mm for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Left or right offset 250mm tin snips for curved cuts in thin sheet metal, aluminium, and vinyl. Spring-loaded handles."
   },
   {
     "id": "trace--3-r10",
@@ -1274,7 +1336,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/trace-3-r10.jpeg",
     "rating": 4.5,
     "reviews": 12,
-    "description": "Quality Trace #3 for your outdoor and indoor needs."
+    "description": "Pre-tied #3 trace for rock and surf fishing. Strong mono leader with a reliable hook and loop knot."
   },
   {
     "id": "tube-cutter-3-30mm-r94",
@@ -1284,17 +1346,18 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/tube-cutter-3-30mm-r94.png",
     "rating": 4.5,
     "reviews": 9,
-    "description": "Quality Tube Cutter 3/30mm for your outdoor and indoor needs."
+    "description": "Adjustable tube cutter for pipes from 3mm to 30mm diameter. Clean, square cuts on copper, PVC, and thin-wall steel tubing."
   },
   {
     "id": "turbo-gas-lighter-r388",
-    "name": "Turbo Gas Lighter",
+    "name": "LK's Turbo Gas Lighter",
     "price": 388,
     "category": "Camping",
     "image": "/product-photos-and-products/turbo-gas-lighter-r388.jpeg",
     "rating": 4.5,
     "reviews": 9,
-    "description": "Quality Turbo Gas Lighter for your outdoor and indoor needs."
+    "brand": "LK's",
+    "description": "Premium LK's turbo gas lighter with powerful windproof jet flame. Perfect for lighting braais, gas stoves, and campfires."
   },
   {
     "id": "vice-grip-250mm-dingqi-r120",
@@ -1304,7 +1367,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/vice-grip-250mm-dingqi-r120.png",
     "rating": 4.5,
     "reviews": 18,
-    "description": "Quality Vice Grip 250mm Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "250mm vice grip locking pliers with adjustable jaw width. Locks firmly onto nuts, bolts, and pipe fittings for hands-free holding."
   },
   {
     "id": "water-paints-tube-12-r52",
@@ -1314,7 +1378,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/water-paints-tube-12-r52.png",
     "rating": 4.5,
     "reviews": 19,
-    "description": "Quality Water Paints Tube 12 for your outdoor and indoor needs."
+    "description": "12-tube watercolour paint set with vivid, blendable colours. Great for painting, journaling, and school art projects."
   },
   {
     "id": "windproof-camping-stove-k-203-r150",
@@ -1324,7 +1388,7 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/windproof-campine-stove-k-203-r150.jpeg",
     "rating": 4.5,
     "reviews": 16,
-    "description": "Quality Windproof Camping Stove K/203 for your outdoor and indoor needs."
+    "description": "Windproof camping stove (K/203) with efficient burner design. Cooks in windy conditions where open flames fail. Compact and portable."
   },
   {
     "id": "wire-stripper-dingqi-r79",
@@ -1334,7 +1398,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/wire-stripper-dingqi-r79.png",
     "rating": 4.5,
     "reviews": 16,
-    "description": "Quality Wire Stripper Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Self-adjusting wire stripper for stripping insulation from 0.2mm to 6mm cables. One-handed operation with integrated cutter."
   },
   {
     "id": "wire-stripper-l-d-dingqi-r49",
@@ -1344,7 +1409,8 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/wire-stripper-l-d-dingqi-r49.png",
     "rating": 4.5,
     "reviews": 6,
-    "description": "Quality Wire Stripper L/d Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Lightweight wire stripper with ergonomic design for comfortable extended use. Strips, cuts, and loops thin wire with precision."
   },
   {
     "id": "working-glove-dingqi-r30",
@@ -1354,38 +1420,80 @@ export const PRODUCTS: Product[] = [
     "image": "/product-photos-and-products/working-glove-dingqi-r30.png",
     "rating": 4.5,
     "reviews": 22,
-    "description": "Quality Working Glove Dingqi for your outdoor and indoor needs."
+    "brand": "Dingqi",
+    "description": "Heavy-duty work gloves with reinforced palm and knuckle protection. Breathable fabric back for comfort during manual labour."
   },
   {
     "id": "wsom-outdoor-bento-pot-r155",
-    "name": "Wsom Outdoor Bento Pot",
+    "name": "Owsom Outdoor Bento Pot",
     "price": 155,
     "category": "Kitchen",
     "image": "/product-photos-and-products/wsom-outdoor-bento-pot-r155.jpeg",
     "rating": 4.5,
     "reviews": 19,
-    "description": "Quality Wsom Outdoor Bento Pot for your outdoor and indoor needs."
+    "brand": "Owsom",
+    "description": "Compact outdoor bento pot with built-in steam tray. Hard-anodised aluminium heats evenly for one-pot camp meals."
   },
   {
     "id": "wsom-outdoor-one-piece-pot-set-kettle-r199",
-    "name": "Wsom Outdoor One/piece Pot Set Kettle",
+    "name": "Owsom Outdoor One/piece Pot Set Kettle",
     "price": 199,
     "category": "Kitchen",
     "image": "/product-photos-and-products/wsom-outdoor-one-piece-pot-set-kettle-r199.jpeg",
     "rating": 4.5,
     "reviews": 18,
-    "description": "Quality Wsom Outdoor One/piece Pot Set Kettle for your outdoor and indoor needs."
+    "brand": "Owsom",
+    "description": "All-in-one pot set with built-in kettle for boiling water and cooking meals. Nests together for minimal pack space."
   },
   {
     "id": "wsom-table-camping-r320",
-    "name": "Wsom Table Camping",
+    "name": "Owsom Table Camping 56cm",
     "price": 320,
     "category": "Camping",
     "image": "/product-photos-and-products/wsom-table-camping-r320.jpeg",
     "rating": 4.5,
     "reviews": 5,
-    "description": "Quality Wsom Table Camping for your outdoor and indoor needs."
+    "brand": "Owsom",
+    "description": "Foldable 56cm camping table with lightweight aluminium frame. Sets up in seconds and folds flat for car boot storage."
   }
 ];
 
 export const TEAM: TeamMember[] = [];
+
+export const LOCAL_BUSINESS_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "GeneralStore",
+  "name": "Indoor and Outdoor",
+  "image": "https://indoorandoutdoor.co.za/logo.svg",
+  "@id": "https://indoorandoutdoor.co.za",
+  "url": "https://indoorandoutdoor.co.za",
+  "telephone": "+27 72 099 0138",
+  "email": "byns@indoorandoutdoor.co.za",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "47 Churchstreet",
+    "addressLocality": "Lambertsbay",
+    "addressRegion": "Western Cape",
+    "postalCode": "8130",
+    "addressCountry": "ZA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -32.0936917,
+    "longitude": 18.3006816
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:30",
+      "closes": "17:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "15:00"
+    }
+  ]
+};

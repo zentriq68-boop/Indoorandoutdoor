@@ -82,14 +82,6 @@ const Layout: React.FC = () => {
             <p className="text-sm text-gray-400 leading-relaxed mb-4">
               Serving the West Coast community with quality goods and friendly service.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors text-white">
-                <span className="text-xs">FB</span>
-              </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors text-white">
-                <span className="text-xs">IG</span>
-              </a>
-            </div>
           </div>
           <div>
             <h3 className="text-white font-bold mb-4">Shop</h3>
@@ -106,8 +98,6 @@ const Layout: React.FC = () => {
             <ul className="space-y-2 text-sm">
               <li><Link to="/contact" className="hover:text-primary transition-colors">Contact Us</Link></li>
               <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Returns Policy</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Shipping Info</a></li>
             </ul>
           </div>
           <div>
@@ -119,7 +109,7 @@ const Layout: React.FC = () => {
               </li>
               <li className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-primary text-lg">call</span>
-                <span className="text-background-dark dark:text-white">+27 72 099 0138</span>
+                <span className="text-white">+27 72 099 0138</span>
               </li>
               <li className="flex items-center gap-3">
                 <span>Mon - Fri: 08:30 - 17:30<br/>Sat: 09:00 - 15:00<br/>Sun: Closed</span>
@@ -128,7 +118,7 @@ const Layout: React.FC = () => {
           </div>
         </div>
         <div className="max-w-[1200px] mx-auto px-4 md:px-10 mt-12 pt-8 border-t border-white/5 text-center text-xs text-gray-500">
-          <p>© 2024 Indoor and Outdoor Store. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Indoor and Outdoor Store. All rights reserved.</p>
         </div>
       </footer>
     </div>

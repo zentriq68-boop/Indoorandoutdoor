@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { PRODUCTS } from '../constants';
 import ProductCard from '../components/ProductCard';
 import ScrollReveal from '../components/ScrollReveal';
+import SEO from '../components/SEO';
 
 const ProductDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -15,7 +17,53 @@ const ProductDetails: React.FC = () => {
     window.scrollTo(0, 0);
   }, [id]);
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.name,
+    "image": `https://indoorandoutdoor.co.za${product.image}`,
+    "description": product.description || `Quality ${product.name} available at Indoor and Outdoor, Lambert's Bay.`,
+    "brand": {
+      "@type": "Brand",
+      "name": product.brand || "Indoor and Outdoor"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": `https://indoorandoutdoor.co.za/product/${product.id}`,
+      "priceCurrency": "ZAR",
+      "price": product.price,
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "Indoor and Outdoor"
+      }
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://indoorandoutdoor.co.za/" },
+      { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://indoorandoutdoor.co.za/catalogue" },
+      { "@type": "ListItem", "position": 3, "name": product.category, "item": `https://indoorandoutdoor.co.za/catalogue?category=${encodeURIComponent(product.category)}` },
+      { "@type": "ListItem", "position": 4, "name": product.name }
+    ]
+  };
+
   return (
+    <>
+      <SEO
+        title={`${product.name} | Indoor and Outdoor Lambert's Bay`}
+        description={product.description || `Shop ${product.name} at Indoor and Outdoor, Lambert's Bay. Quality gear for the West Coast lifestyle. Visit us at 47 Church Street.`}
+        url={`https://indoorandoutdoor.co.za/product/${product.id}`}
+        image={`https://indoorandoutdoor.co.za${product.image}`}
+        type="product"
+      />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(productSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+      </Helmet>
     <div className="bg-white dark:bg-[#221a10] min-h-screen">
       <div className="w-full border-b border-[#f0ebe5] dark:border-[#3a3228] bg-background-light dark:bg-[#221a10]">
         <div className="max-w-[1200px] mx-auto px-4 md:px-10 py-4">
@@ -49,13 +97,13 @@ const ProductDetails: React.FC = () => {
             </div>
             <div className="grid grid-cols-4 gap-4 mt-4">
               <ScrollReveal variant="scale" delay={0.1} className="aspect-square rounded-lg border-2 border-primary cursor-pointer overflow-hidden bg-[#f8f7f6] dark:bg-[#2c241b] p-2">
-                <img alt="Thumbnail 1" className="w-full h-full object-contain" src={product.image} loading="lazy" decoding="async" width="100" height="100"/>
+                <img alt={`${product.name} - view 1`} className="w-full h-full object-contain" src={product.image} loading="lazy" decoding="async" width="100" height="100"/>
               </ScrollReveal>
               <ScrollReveal variant="scale" delay={0.2} className="aspect-square rounded-lg border border-[#e5e0d8] dark:border-[#3a3228] cursor-pointer hover:border-gray-400 overflow-hidden bg-[#f8f7f6] dark:bg-[#2c241b] p-2 opacity-60 hover:opacity-100 transition-all">
-                <img alt="Thumbnail 2" className="w-full h-full object-contain" src={product.image} loading="lazy" decoding="async" width="100" height="100"/>
+                <img alt={`${product.name} - view 2`} className="w-full h-full object-contain" src={product.image} loading="lazy" decoding="async" width="100" height="100"/>
               </ScrollReveal>
               <ScrollReveal variant="scale" delay={0.3} className="aspect-square rounded-lg border border-[#e5e0d8] dark:border-[#3a3228] cursor-pointer hover:border-gray-400 overflow-hidden bg-[#f8f7f6] dark:bg-[#2c241b] p-2 opacity-60 hover:opacity-100 transition-all">
-                <img alt="Thumbnail 3" className="w-full h-full object-contain" src={product.image} loading="lazy" decoding="async" width="100" height="100"/>
+                <img alt={`${product.name} - view 3`} className="w-full h-full object-contain" src={product.image} loading="lazy" decoding="async" width="100" height="100"/>
               </ScrollReveal>
             </div>
           </ScrollReveal>
@@ -76,9 +124,9 @@ const ProductDetails: React.FC = () => {
                 {product.description || "High quality gear designed for the harsh West Coast elements. Durable, reliable, and tested by locals."}
               </p>
               <ul className="mt-4 space-y-2 text-sm text-gray-500 dark:text-gray-400">
-                <li className="flex items-center gap-2"><span className="material-symbols-outlined text-primary text-base">check</span> 6+1 Stainless Steel Ball Bearings</li>
-                <li className="flex items-center gap-2"><span className="material-symbols-outlined text-primary text-base">check</span> 5.3:1 Gear Ratio</li>
-                <li className="flex items-center gap-2"><span className="material-symbols-outlined text-primary text-base">check</span> 15kg Max Drag System</li>
+                <li className="flex items-center gap-2"><span className="material-symbols-outlined text-primary text-base">check</span> Available in store at 47 Church Street, Lambert's Bay</li>
+                <li className="flex items-center gap-2"><span className="material-symbols-outlined text-primary text-base">check</span> Quality gear tested for West Coast conditions</li>
+                <li className="flex items-center gap-2"><span className="material-symbols-outlined text-primary text-base">check</span> Expert advice from our local team</li>
               </ul>
             </div>
             <div className="mt-auto">
@@ -130,6 +178,7 @@ const ProductDetails: React.FC = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

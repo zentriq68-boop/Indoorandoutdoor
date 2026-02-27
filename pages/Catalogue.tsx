@@ -1,7 +1,15 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { PRODUCTS, CATEGORIES } from '../constants';
 import ProductCard from '../components/ProductCard';
+import SEO from '../components/SEO';
+
+const SORT_OPTIONS = [
+  { value: 'Featured', label: 'Featured', icon: 'star' },
+  { value: 'Price: Low to High', label: 'Price: Low to High', icon: 'arrow_downward' },
+  { value: 'Price: High to Low', label: 'Price: High to Low', icon: 'arrow_upward' },
+  { value: 'Newest Arrivals', label: 'Newest Arrivals', icon: 'schedule' },
+];
 
 const Catalogue: React.FC = () => {
   const navigate = useNavigate();
@@ -97,6 +105,12 @@ const Catalogue: React.FC = () => {
 
   return (
     <>
+      <SEO 
+        title="Product Catalogue | Indoor and Outdoor Lambert's Bay"
+        description="Browse our selection of quality West Coast gear, including fishing tackle, braai equipment, and camping essentials. Shop local in Lambert's Bay."
+        url="https://indoorandoutdoor.co.za/catalogue"
+        noIndex={selectedCategories.length > 0 || searchQuery.length > 0}
+      />
       {/* Mobile Filter Drawer */}
       <div className={`fixed inset-0 z-[100] lg:hidden transition-opacity duration-300 ${isMobileFilterOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setIsMobileFilterOpen(false)} />
@@ -211,20 +225,7 @@ const Catalogue: React.FC = () => {
                   <span className="material-symbols-outlined text-xl">tune</span>
                   Filters
                 </button>
-                <span className="text-sm text-gray-500 whitespace-nowrap hidden sm:inline">Sort by:</span>
-                <div className="relative flex-1 sm:w-48 min-w-[140px]">
-                  <select 
-                    value={sortBy}
-                    onChange={(e) => setSortBy(e.target.value)}
-                    className="w-full appearance-none bg-white dark:bg-[#2c241b] border border-[#e5e0d8] dark:border-[#3a3228] text-background-dark dark:text-white text-sm rounded-lg px-4 py-2.5 pr-8 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary cursor-pointer transition-shadow shadow-sm"
-                  >
-                    <option>Featured</option>
-                    <option>Price: Low to High</option>
-                    <option>Price: High to Low</option>
-                    <option>Newest Arrivals</option>
-                  </select>
-                  <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-xl">unfold_more</span>
-                </div>
+                <SortDropdown sortBy={sortBy} setSortBy={setSortBy} />
               </div>
             </div>
 
@@ -318,6 +319,95 @@ const Catalogue: React.FC = () => {
         </div>
       </div>
     </>
+  );
+};
+
+// Custom Sort Dropdown Component
+const SortDropdown: React.FC<{
+  sortBy: string;
+  setSortBy: (value: string) => void;
+}> = ({ sortBy, setSortBy }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const activeOption = SORT_OPTIONS.find(o => o.value === sortBy) || SORT_OPTIONS[0];
+
+  return (
+    <div className="relative" ref={dropdownRef}>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className={`
+          flex items-center gap-2.5 px-4 py-2.5 rounded-xl border text-sm font-semibold
+          transition-all duration-200 shadow-sm cursor-pointer select-none min-w-[200px]
+          bg-white dark:bg-[#2c241b] text-background-dark dark:text-white
+          ${isOpen
+            ? 'border-primary ring-2 ring-primary/20 shadow-md'
+            : 'border-[#e5e0d8] dark:border-[#3a3228] hover:border-primary/50 hover:shadow-md'}
+        `}
+      >
+        <span className="material-symbols-outlined text-primary text-[18px]">{activeOption.icon}</span>
+        <span className="flex-1 text-left truncate">{activeOption.label}</span>
+        <span
+          className={`material-symbols-outlined text-gray-400 text-[20px] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+        >
+          expand_more
+        </span>
+      </button>
+
+      <div
+        className={`
+          absolute right-0 top-[calc(100%+6px)] z-50 w-full min-w-[220px]
+          bg-white dark:bg-[#2c241b] border border-[#e5e0d8] dark:border-[#3a3228]
+          rounded-xl shadow-xl overflow-hidden
+          transition-all duration-200 origin-top
+          ${isOpen
+            ? 'opacity-100 scale-y-100 pointer-events-auto translate-y-0'
+            : 'opacity-0 scale-y-95 pointer-events-none -translate-y-1'}
+        `}
+      >
+        <div className="py-1.5">
+          {SORT_OPTIONS.map((option) => {
+            const isActive = sortBy === option.value;
+            return (
+              <button
+                key={option.value}
+                onClick={() => {
+                  setSortBy(option.value);
+                  setIsOpen(false);
+                }}
+                className={`
+                  w-full flex items-center gap-3 px-4 py-3 text-sm font-medium
+                  transition-all duration-150 cursor-pointer
+                  ${isActive
+                    ? 'bg-primary/10 dark:bg-primary/15 text-primary'
+                    : 'text-gray-700 dark:text-gray-300 hover:bg-[#f5f0ea] dark:hover:bg-[#3a3228]'}
+                `}
+              >
+                <span
+                  className={`material-symbols-outlined text-[18px] ${isActive ? 'text-primary' : 'text-gray-400 dark:text-gray-500'}`}
+                >
+                  {option.icon}
+                </span>
+                <span className="flex-1 text-left">{option.label}</span>
+                {isActive && (
+                  <span className="material-symbols-outlined text-primary text-[18px]">check</span>
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </div>
   );
 };
 

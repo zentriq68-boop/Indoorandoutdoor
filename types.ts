@@ -10,6 +10,7 @@ export interface Product {
   isHot?: boolean;
   discount?: number;
   description?: string;
+  brand?: string;
 }
 
 export interface Category {

@@ -2,12 +2,18 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TEAM } from '../constants';
 import ScrollReveal from '../components/ScrollReveal';
+import SEO from '../components/SEO';
 
 const About: React.FC = () => {
     const navigate = useNavigate();
 
   return (
     <>
+      <SEO 
+        title="About Us | Indoor and Outdoor - Lambert's Bay General Store"
+        description="Learn about Indoor and Outdoor, Lambert's Bay's trusted local store for fishing gear, camping equipment, and coastal living essentials on the West Coast."
+        url="https://indoorandoutdoor.co.za/about"
+      />
       <div className="relative w-full min-h-[700px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#221a10]/80 via-[#221a10]/40 to-transparent z-10"></div>

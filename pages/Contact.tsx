@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import ScrollReveal from '../components/ScrollReveal';
+import SEO from '../components/SEO';
+import { LOCAL_BUSINESS_SCHEMA } from '../constants';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -27,6 +30,16 @@ const Contact: React.FC = () => {
 
   return (
     <>
+      <SEO 
+        title="Contact Us | Indoor and Outdoor Lambert's Bay"
+        description="Visit Indoor and Outdoor at 47 Church Street, Lambert's Bay. We're open 6 days a week for fishing gear, outdoor equipment, and expert local advice."
+        url="https://indoorandoutdoor.co.za/contact"
+      />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(LOCAL_BUSINESS_SCHEMA)}
+        </script>
+      </Helmet>
       <div className="relative w-full bg-[#221a10] py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-40">
           <div className="w-full h-full bg-cover bg-center" style={{backgroundImage: 'url("/contact-section.jpeg")'}}></div>
@@ -45,7 +58,7 @@ const Contact: React.FC = () => {
           </ScrollReveal>
           <ScrollReveal variant="slideUp" delay={0.6}>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-              We're open 7 days a week. Drop by for some local advice, check our stock, or just say hello.
+              We're open 6 days a week. Drop by for some local advice, check our stock, or just say hello.
             </p>
           </ScrollReveal>
         </div>
