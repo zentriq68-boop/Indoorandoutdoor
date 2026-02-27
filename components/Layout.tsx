@@ -1,9 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 
 const Layout: React.FC = () => {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+  const [isInstallable, setIsInstallable] = useState(false);
+
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (e: Event) => {
+      // Prevent the mini-infobar from appearing on mobile
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      setDeferredPrompt(e);
+      // Update UI notify the user they can install the PWA
+      setIsInstallable(true);
+    };
+
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    };
+  }, []);
+
+  const handleInstallClick = async () => {
+    if (!deferredPrompt) return;
+    // Show the install prompt
+    deferredPrompt.prompt();
+    // Wait for the user to respond to the prompt
+    const { outcome } = await deferredPrompt.userChoice;
+    // We've used the prompt, and can't use it again, throw it away
+    setDeferredPrompt(null);
+    setIsInstallable(false);
+  };
 
   const isActive = (path: string) => {
     return location.pathname === path ? "text-primary font-bold" : "text-background-dark dark:text-gray-200 hover:text-primary";
@@ -117,8 +147,18 @@ const Layout: React.FC = () => {
             </ul>
           </div>
         </div>
-        <div className="max-w-[1200px] mx-auto px-4 md:px-10 mt-12 pt-8 border-t border-white/5 text-center text-xs text-gray-500">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-10 mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <p>&copy; {new Date().getFullYear()} Indoor and Outdoor Store. All rights reserved.</p>
+          <a 
+            href="https://zentriqsa.com" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center gap-2 text-sm text-gray-300 font-medium bg-white/5 border border-white/10 hover:bg-white/10 hover:text-white hover:border-white/20 px-4 py-2 rounded-full transition-all duration-300 shadow-sm"
+          >
+            <span>made by <strong className="text-white">Gianno Boyce</strong></span>
+            <span className="w-1 h-1 rounded-full bg-primary mx-1"></span>
+            <span>zentriqsa.com</span>
+          </a>
         </div>
       </footer>
     </div>

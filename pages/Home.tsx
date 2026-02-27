@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { CATEGORIES, PRODUCTS, LOCAL_BUSINESS_SCHEMA } from '../constants';
 import ProductCard from '../components/ProductCard';
@@ -9,6 +9,31 @@ import { Helmet } from 'react-helmet-async';
 const Home: React.FC = () => {
     const navigate = useNavigate();
     const featuredProducts = PRODUCTS.slice(0, 4); // Just taking first 4 for home
+
+    const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+    const [isInstallable, setIsInstallable] = useState(false);
+  
+    useEffect(() => {
+      const handleBeforeInstallPrompt = (e: Event) => {
+        e.preventDefault();
+        setDeferredPrompt(e);
+        setIsInstallable(true);
+      };
+  
+      window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+  
+      return () => {
+        window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+      };
+    }, []);
+  
+    const handleInstallClick = async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      setDeferredPrompt(null);
+      setIsInstallable(false);
+    };
 
   return (
     <>
@@ -50,8 +75,12 @@ const Home: React.FC = () => {
               <button onClick={() => navigate('/catalogue')} className="flex items-center justify-center rounded-xl h-12 px-8 bg-primary hover:bg-primary/90 text-white text-base font-bold leading-normal tracking-[0.015em] transition-all transform hover:scale-105 shadow-lg shadow-primary/30">
                 Explore Our Products
               </button>
-              <button onClick={() => navigate('/catalogue')} className="flex items-center justify-center rounded-xl h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border border-white/30 text-base font-bold leading-normal tracking-[0.015em] transition-all">
-                View Fan Favourites
+              <button 
+                onClick={handleInstallClick} 
+                className="flex items-center justify-center gap-2 rounded-xl h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border border-white/30 text-base font-bold leading-normal tracking-[0.015em] transition-all"
+              >
+                <span className="material-symbols-outlined">download</span>
+                Install App
               </button>
             </ScrollReveal>
           </div>
