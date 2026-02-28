@@ -1455,6 +1455,72 @@ export const PRODUCTS: Product[] = [
     "reviews": 5,
     "brand": "Owsom",
     "description": "Foldable 56cm camping table with lightweight aluminium frame. Sets up in seconds and folds flat for car boot storage."
+  },
+  {
+    "id": "loomis-franklin-surge-12-r1380",
+    "name": "Loomis & Franklin Surge (3-piece) 12 foot",
+    "price": 1380,
+    "category": "Fishing",
+    "brand": "Loomis & Franklin",
+    "image": "/Loomis & Franklin Surge (3-piece) 12 foot R1380.png",
+    "rating": 5.0,
+    "reviews": 0,
+    "description": "Premium Loomis & Franklin Surge 3-piece 12 foot rod for serious anglers."
+  },
+  {
+    "id": "loomis-franklin-shore-master-10-r710",
+    "name": "Loomis and Franklin Shore Master 3-piece 10 foot",
+    "price": 710,
+    "category": "Fishing",
+    "brand": "Loomis & Franklin",
+    "image": "/Loomis and Franklin Shore Master 3-piece 10,12and 14 foot R710,R965,R850.png",
+    "rating": 5.0,
+    "reviews": 0,
+    "description": "Loomis and Franklin Shore Master 3-piece 10 foot rod."
+  },
+  {
+    "id": "loomis-franklin-shore-master-12-r965",
+    "name": "Loomis and Franklin Shore Master 3-piece 12 foot",
+    "price": 965,
+    "category": "Fishing",
+    "brand": "Loomis & Franklin",
+    "image": "/Loomis and Franklin Shore Master 3-piece 10,12and 14 foot R710,R965,R850.png",
+    "rating": 5.0,
+    "reviews": 0,
+    "description": "Loomis and Franklin Shore Master 3-piece 12 foot rod."
+  },
+  {
+    "id": "loomis-franklin-shore-master-14-r850",
+    "name": "Loomis and Franklin Shore Master 3-piece 14 foot",
+    "price": 850,
+    "category": "Fishing",
+    "brand": "Loomis & Franklin",
+    "image": "/Loomis and Franklin Shore Master 3-piece 10,12and 14 foot R710,R965,R850.png",
+    "rating": 5.0,
+    "reviews": 0,
+    "description": "Loomis and Franklin Shore Master 3-piece 14 foot rod."
+  },
+  {
+    "id": "okuma-g-force-hd-fiberglass-10-r450",
+    "name": "Okuma G-Force HD Fiberglass 10",
+    "price": 450,
+    "category": "Fishing",
+    "brand": "Okuma",
+    "image": "/Okuma G-Force HD Fiberglass 10 R450.png",
+    "rating": 5.0,
+    "reviews": 0,
+    "description": "Okuma G-Force HD Fiberglass 10 foot rod."
+  },
+  {
+    "id": "okuma-wave-power-pro-12-r1242",
+    "name": "Okuma Wave Power Pro 3pc surf spinning rods 24 ton 12ft",
+    "price": 1242,
+    "category": "Fishing",
+    "brand": "Okuma",
+    "image": "/okuma Wave Power Pro 3pc surf spinning rods 24 ton R1242 12ft.jpeg",
+    "rating": 5.0,
+    "reviews": 0,
+    "description": "Okuma Wave Power Pro 3-piece surf spinning rod 24 ton 12ft."
   }
 ];
 

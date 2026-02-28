@@ -116,8 +116,10 @@ const ProductDetails: React.FC = () => {
               {product.name}
             </h1>
             <div className="flex items-end gap-3 mb-6 pb-6 border-b border-[#f0ebe5] dark:border-[#3a3228]">
-              <span className="text-3xl font-bold text-background-dark dark:text-white">R {product.price}</span>
-              <span className="text-sm text-gray-500 dark:text-gray-400 mb-1.5">Includes VAT</span>
+              <span className="text-3xl font-bold text-background-dark dark:text-white">
+                {product.price === 0 ? "Inquire for price" : `R ${product.price}`}
+              </span>
+              {product.price > 0 && <span className="text-sm text-gray-500 dark:text-gray-400 mb-1.5">Includes VAT</span>}
             </div>
             <div className="prose prose-stone dark:prose-invert max-w-none mb-8">
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">

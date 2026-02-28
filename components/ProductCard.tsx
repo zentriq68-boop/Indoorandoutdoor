@@ -44,7 +44,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             {product.originalPrice && (
               <span className="text-xs text-gray-400 line-through">R {product.originalPrice}</span>
             )}
-            <span className="text-primary font-bold text-lg">R {product.price}</span>
+            <span className="text-primary font-bold text-lg">
+              {product.price === 0 ? "Inquire for price" : `R ${product.price}`}
+            </span>
           </div>
         </div>
       </div>
