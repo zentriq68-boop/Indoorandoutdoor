@@ -15,7 +15,7 @@ import path from 'path';
 
 const DIST_DIR = './dist';
 const BASE_URL = 'https://indoorandoutdoor.co.za';
-const DEFAULT_IMAGE = `${BASE_URL}/hero-section.jpeg`;
+const DEFAULT_IMAGE = `${BASE_URL}/hero-section.webp`;
 
 // Read product data from constants.ts
 const constantsFile = readFileSync('./constants.ts', 'utf-8');

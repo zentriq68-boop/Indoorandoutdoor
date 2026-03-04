@@ -309,12 +309,7 @@ const Catalogue: React.FC = () => {
               )}
             </div>
 
-            <div className="flex justify-center mt-16">
-              <button className="flex items-center gap-2 px-8 py-3 rounded-xl border border-[#e5e0d8] dark:border-[#3a3228] text-background-dark dark:text-white hover:bg-[#ede8e2] dark:hover:bg-[#3a3228] transition-colors font-semibold">
-                Load More Products
-                <span className="material-symbols-outlined">expand_more</span>
-              </button>
-            </div>
+
           </div>
         </div>
       </div>
